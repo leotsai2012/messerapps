@@ -1,0 +1,14 @@
+1. Description
+
+The app contains physical properties of 15 major industrial gases as well as a conversion calculator for the major units.
+
+2. Technology
+
+The app is written in HTML based on the dojo toolkit mobile framework. It is tested  on Gecko based browsers. 
+
+
+3. Demo site
+
+The demo site is at http://h2217974.stratoserver.net/tools/combined/Germany/en, alt. http://h2217974.stratoserver.net/tools/combined/Germany/de . Depending on the language settings of your browser a different language version is shown
+
+
