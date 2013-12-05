@@ -1,0 +1,6 @@
+{
+    "items": [
+ {name: "Messer product name",  moveTo: "name"},
+ {name: "EN ISO 14175:2008 selection",  moveTo: "iso"}                
+ ]
+}

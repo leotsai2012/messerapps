@@ -1,0 +1,7 @@
+{
+    "items": [
+ {name: "Inoxline C2", href: 'javascript:requestmaterial("0351");', icon: "/media/img/light_green.png"},
+ {name: "Inoxline He15 C2",  href: 'javascript:requestmaterial("0355");', icon: "/media/img/light_green.png"}
+   
+ ]
+}

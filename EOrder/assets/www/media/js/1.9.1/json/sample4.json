@@ -1,0 +1,40 @@
+{
+    "items": [
+        {name: "Albanien",  moveTo: "country1", icon: "/media/img/icons/flags/png/Albania.png"},
+        {name: "Algerien",  moveTo: "country2", icon: "/media/img/icons/flags/png/Algeria.png"},
+        {name: "Oesterreich",  moveTo: "country3", icon: "/media/img/icons/flags/png/Austria.png"},       
+        {name: "Belgien",  moveTo: "country4", icon: "/media/img/icons/flags/png/Belgium.png"},
+        {name: "Bosnien und Herzegowina",  moveTo: "country5", icon: "/media/img/icons/flags/png/Bosnia-Herzegovina.png"},
+        {name: "Bulgarien",  moveTo: "country6", icon: "/media/img/icons/flags/png/Bulgaria.png"},        
+        {name: "Kroatien",  moveTo: "country7", icon: "/media/img/icons/flags/png/Croatia.png"},              
+        {name: "Tschechien",  moveTo: "country8", icon: "/media/img/icons/flags/png/CzechRepublic.png"},        
+        {name: "Daenemark",  moveTo: "country9", icon: "/media/img/icons/flags/png/Denmark.png"},         
+       {name: "Estland",  moveTo: "country10", icon: "/media/img/icons/flags/png/Estonia.png"}, 
+        {name: "Frankreich",  moveTo: "country11", icon: "/media/img/icons/flags/png/France.png"},       
+        {name: "Deutschland",  moveTo: "country12", icon: "/media/img/icons/flags/png/Germany.png"},
+        {name: "Ungarn",  moveTo: "country13", icon: "/media/img/icons/flags/png/Hungary.png"},  
+         {name: "Italien",  moveTo: "country14", icon: "/media/img/icons/flags/png/Italy.png"},  
+         {name: "Russland",  moveTo: "country15", icon: "/media/img/icons/flags/png/Russia.png"},
+          {name: "Lettland",  moveTo: "country16", icon: "/media/img/icons/flags/png/Latvia.png"},  
+        {name: "Litauen",  moveTo: "country17", icon: "/media/img/icons/flags/png/Lithuania.png"},            
+         {name: "Makedonien",  moveTo: "country18", icon: "/media/img/icons/flags/png/Macedonia.png"}, 
+      {name: "Montenegro",  moveTo: "country19", icon: "/media/img/icons/flags/png/Montenegro.png"}, 
+         {name: "Niederlande",  moveTo: "country20", icon: "/media/img/icons/flags/png/Netherlands.png"}, 
+       {name: "Neuseeland",  moveTo: "country21", icon: "/media/img/icons/flags/png/NewZealand.png"},
+        {name: "China",  moveTo: "country22", icon: "/media/img/icons/flags/png/PeoplesRepublicofChina.png"}, 
+        {name: "Peru",  moveTo: "country23", icon: "/media/img/icons/flags/png/Peru.png"},              
+        {name: "Polen",  moveTo: "country24", icon: "/media/img/icons/flags/png/Poland.png"},       
+        {name: "Portugal",  moveTo: "country25", icon: "/media/img/icons/flags/png/Portugal.png"}, 
+         {name: "Rumenien",  moveTo: "country26", icon: "/media/img/icons/flags/png/Romania.png"},
+         {name: "Serbien",  moveTo: "country27", icon: "/media/img/icons/flags/png/Serbia.png"},         
+         {name: "Slovakei",  moveTo: "country28", icon: "/media/img/icons/flags/png/Slovakia.png"},         
+         {name: "Slovenien",  moveTo: "country29", icon: "/media/img/icons/flags/png/Slovenia.png"},         
+         {name: "Spanien",  moveTo: "country30", icon: "/media/img/icons/flags/png/Spain.png"},  
+         {name: "Schweiz",  moveTo: "country31", icon: "/media/img/icons/flags/png/Switzerland.png"},          
+         {name: "Turkei",  moveTo: "country32", icon: "/media/img/icons/flags/png/Turkey.png"},  
+         {name: "Ukraine",  moveTo: "country33", icon: "/media/img/icons/flags/png/Ukraine.png"},          
+         {name: "Vietnam",  moveTo: "country34", icon: "/media/img/icons/flags/png/Vietnam.png"}                                                                                                    
+    ]
+}
+
+
