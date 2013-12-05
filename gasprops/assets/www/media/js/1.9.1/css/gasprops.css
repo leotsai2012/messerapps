@@ -1,0 +1,195 @@
+
+.correctmaring {
+  margin-left:15px;
+}
+
+#firstbutton {
+  margin-left : 0px;
+  border-left: 0px white ;
+}
+
+ul li a {
+font-size: 12px;
+}
+
+
+
+.gassymbol {
+margin-bottom: 00px;
+margin-right: 10px;
+float: right;
+width: 40px;
+}
+
+.gashelp {
+  color : #3867a2;
+  font-weight : bold ;
+  font-size: 13px ;
+  line-height: 16px;
+  float:left;
+  }
+
+.gasname {  
+  display: block ;
+  text-align: left ;
+  font-size: 12px ;
+  line-height: 16px;
+ }
+ 
+.gasletter {
+  display: inline ;
+  line-height: 40px ;
+  vertical-align: top ;
+  font-size: 25px ;
+  color : #3867a2 ;
+    padding-left:10px;
+    float:left;
+ }
+ 
+ .gasformula {
+  width: 30px;
+  float:left;
+
+ }
+ 
+ .conversionbutton {
+ height:30px ; 
+ width:100% ;
+ font-size:25px;
+ text-align: left;
+ background-color: #ccc ;
+  margin-left:5px;
+ }
+ 
+ .inputquery {
+ height:35px ; 
+ width:60% ;
+ text-align: left;
+ background-color: #ccc ;
+ }
+ 
+ .conversionbutton2 {
+height: 70px;
+width: 100%;
+font-size: 25px;
+text-align: left;
+background-color: #CCC;
+white-space: normal;
+}
+ 
+.frombutton {
+     width:60px ; 
+     height:40px ;
+     line-height:10px;
+     margin:5px ;
+     background-color : #3867a2;
+ }
+ 
+.tobutton {
+   width:60px ; 
+     height:40px ;
+     margin:5px ;
+     background-color : #838281;
+ }
+     
+ 
+ .messertab {
+  float: left;
+  min-width: 100px ;
+  line-height: 70px ;
+  vertical-align: top ;
+  font-size: 20px ;
+  color : white ;
+ 
+ }
+ 
+ .gasproperty {
+ float: right ;
+ color : red ;
+ font-size: 12px ;
+ line-height: 16px;
+ }
+ 
+ .safetysymbol {
+ margin-right: 10px ;
+ margin-top: 0px;
+ float : left ;
+ width: 40px ;
+ }
+ 
+ .gassymbol {
+  margin-bottom : 00px ;
+  margin-right : 10px ;
+  float : right ;
+  width: 40px ;
+ }
+ 
+ .introsg {
+ font-size:13px ;
+ line-height: 15px ;
+ text-align: left ;
+ margin-left: 40px ;
+  color : #3867a2;
+ }
+ 
+ .introsg li {
+
+ font-size:13px ;
+ line-height: 15px ;
+ text-align: left ;
+ margin-left: 40px ;
+  color : #3867a2;
+  
+ }
+
+ 
+ .additionalinfo {
+   display: block;
+  margin-top: 0px;
+  font-size: 11px;
+ }
+ 
+ .fineprint  {
+    display: block;
+  font-size : 13px ;
+  line-height : 14px ;
+  color : #3867a2;
+  text-align: center ;
+  margin-top: 0px;
+ }
+ 
+ .frontbanner {
+  width: 100% ;
+  height: auto ;
+ }
+ 
+#unithelp {
+ line-height: 14px ;
+ }
+ 
+
+
+
+ul, menu, dir {
+display: block;
+list-style-type: disc;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 0px;
+}
+
+
+
+.spaces {
+  min-height:10px ;
+}
+
+.mblListItem {
+margin-left: 10px;
+padding-left: 40px;
+
+}
+
+

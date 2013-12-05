@@ -1,0 +1,998 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" href="media/js/1.9.1/dijit/themes/claro/claro.css" /><link rel="stylesheet"  href="media/js/1.9.1/css/android.css" /><link rel="stylesheet"  href="media/js/1.9.1/css/base.css" /><link rel="stylesheet"  href="media/js/1.9.1/css/gasprops.css" /><title></title></head><body class="claro"><div id="titlepage" class="fullscreen"><p class="centered"><img src="media/img/messerstart.png" /></p></div><div id="home" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><h1 data-dojo-type="dojox/mobile/Heading" class="correctmargin">&nbsp;Gas properties & calculator
+       <div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"><div data-dojo-type="dojox/mobile/RoundRect" ><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Argon.png" moveTo="gasx1" ><p style="margin-left:40px;display:inline;">Argon</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Acetylene.png" moveTo="gasx2" ><p style="margin-left:40px;display:inline;">Acetylen</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Ethane.png" moveTo="gasx3" ><p style="margin-left:40px;display:inline;">Ethan</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Ammonia.png" moveTo="gasx4" ><p style="margin-left:40px;display:inline;">Ammoniak</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Ethylene.png" moveTo="gasx5" ><p style="margin-left:40px;display:inline;">Ethylen</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Chlorine.png" moveTo="gasx6" ><p style="margin-left:40px;display:inline;">Chlor</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/HydrogenChloride.png" moveTo="gasx7" ><p style="margin-left:40px;display:inline;">Chlorwasserstoff</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Nitrousoxide.png" moveTo="gasx8" ><p style="margin-left:40px;display:inline;">Distickstoffoxid</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Carbondioxide.png" moveTo="gasx9" ><p style="margin-left:40px;display:inline;">Kohlendioxid</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Carbonmonoxide.png" moveTo="gasx10" ><p style="margin-left:40px;display:inline;">Kohlenmonoxid</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Krypton.png" moveTo="gasx11" ><p style="margin-left:40px;display:inline;">Krypton</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Helium.png" moveTo="gasx12" ><p style="margin-left:40px;display:inline;">Helium</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Methane.png" moveTo="gasx13" ><p style="margin-left:40px;display:inline;">Methan</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Propane.png" moveTo="gasx14" ><p style="margin-left:40px;display:inline;">Propan</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Neon.png" moveTo="gasx15" ><p style="margin-left:40px;display:inline;">Neon</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Oxygen.png" moveTo="gasx16" ><p style="margin-left:40px;display:inline;">Sauerstoff</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Nitrogen.png" moveTo="gasx17" ><p style="margin-left:40px;display:inline;">Stickstoff</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Hydrogen.png" moveTo="gasx18" ><p style="margin-left:40px;display:inline;">Wasserstoff</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Xenon.png" moveTo="gasx19" ><p style="margin-left:40px;display:inline;">Xenon</p></li></ul><ul data-dojo-type="dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem"  icon="media/images/Sulphurdioxide.png" moveTo="gasx20" ><p style="margin-left:40px;display:inline;">Schwefeldioxid</p></li></ul></div></div></div><div id="gasx1" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop1" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton"  moveTo="calc1" icon="media/img/calculator.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Argon.png" /><div class="gasletter">Argon</div></td><td><img src="media/images/dark_green.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchloses Edelgas, verdichtet, schwerer als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 39.948 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 1.394 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> -122.29 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 48.98 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme </p></td><td><p class="gasproperty"> 161.3 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 178.2 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.3797  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 0.5216 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -186 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.784 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty">   bar</p></td></tr></table></div></div></div><div  data-dojo-type="dojox/mobile/View" id="calc1"><h1 data-dojo-type="dojox/mobile/Heading" label="Gas calculator"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="prop1" icon="media/img/properties.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><div class="gasletter"><img class="gasformula" src="media/images/Argon.png" />
+&nbsp;Argon</td><td style="float:right;"><button data-dojo-type="dojox/mobile/Button"  style="float:right;" onClick='reset("Argon");'>Reset</button></div></td></tr></table><div style="margin:10px;"></div><table><tr><td><input dojo-data-type="dojox/mobile/TextBox" type='number' value="1.0" id="originArgon" class="conversionbutton" onChange='calculatei(""); ' /></td></tr></table><div><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromgal.Argon" onClick='clickfrom("gal.","Argon");'>gal.</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromkgArgon" onClick='clickfrom("kg","Argon");'>kg</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromlArgon" onClick='clickfrom("l","Argon");'>l</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromlb.Argon" onClick='clickfrom("lb.","Argon");'>lb.</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="froml minArgon" onClick='clickfrom("l min","Argon");'>l min</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromm3Argon" onClick='clickfrom("m3","Argon");'>m3</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromm3 hArgon" onClick='clickfrom("m3 h","Argon");'>m3 h</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromNm3Argon" onClick='clickfrom("Nm3","Argon");'>Nm3</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromNm hArgon" onClick='clickfrom("Nm h","Argon");'>Nm h</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromscfArgon" onClick='clickfrom("scf","Argon");'>scf</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromtArgon" onClick='clickfrom("t","Argon");'>t</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromtpdArgon" onClick='clickfrom("tpd","Argon");'>tpd</button></div></div><div data-dojo-type="dojox/mobile/RoundRect" ><table><tr><td><input data-dojo-type="dojox/mobile/TextBox"  id="resultArgon" class="conversionbutton"  onChange = 'reversecalculatei("Argon");' /></td></tr></table></div><div data-dojo-type="dojox/mobile/RoundRect" ><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="togal.Argon" onClick='clickto("gal.","Argon");'>gal.</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tokgArgon" onClick='clickto("kg","Argon");'>kg</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tolArgon" onClick='clickto("l","Argon");'>l</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tolb.Argon" onClick='clickto("lb.","Argon");'>lb.</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tol minArgon" onClick='clickto("l min","Argon");'>l min</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tom3Argon" onClick='clickto("m3","Argon");'>m3</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tom3 hArgon" onClick='clickto("m3 h","Argon");'>m3 h</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toNm3Argon" onClick='clickto("Nm3","Argon");'>Nm3</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toNm hArgon" onClick='clickto("Nm h","Argon");'>Nm h</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toscfArgon" onClick='clickto("scf","Argon");'>scf</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="totArgon" onClick='clickto("t","Argon");'>t</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="totpdArgon" onClick='clickto("tpd","Argon");'>tpd</button></div><div data-dojo-type="dojox/mobile/RoundRect" ><p id="unithelp"><b>Definitionen:</b><table><tr><td style="width:100px;"><b>m<sup>3</sup></b></td><td> Value at 1000 mbar, 15°C </td></tr><tr><td style="width:100px;"><b>Nm<sup>3</sup></b></td><td> Value at1013 mbar, 0°C </td></tr><tr><td style="width:100px;"><b>sm<sup>3</sup></b></td><td> Value at 981 mbar, 15°C </td></tr><tr><td style="width:100px;"><b>l<sup>&nbsp;</sup></b></td><td> liquid volume </td></tr></table></p></div></div></div></div><div id="gasx2" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop2" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Acetylene.png" /><div class="gasletter">Acetylen</div></td><td><img src="media/images/maroon_2.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/brennbar_b.jpg" ><img  src="media/images/brennbar_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, in reiner Form geruchloses, brennbares Gas, exothermer Selbstzerfall, in Aceton gelöst, leichter als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 26.038 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.1775 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty">   kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 61.39 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> 35.18 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme  </p></td><td><p class="gasproperty"> 801.89 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 1.687 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.9066  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 215 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -83.8 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty"> 43.36 bar</p></td></tr></table></div></div></div></div><div id="gasx3" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop3" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Ethane.png" /><div class="gasletter">Ethan</div></td><td><img src="media/images/red_5.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/brennbar_b.jpg" ><img  src="media/images/brennbar_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchloses, narkotisierend wirkendes, brennbares Gas,
+verflüssigt, leichter als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 30.069 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 0.5441 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> 32.18 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 48.714 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.3551 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.0481  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 1.757 kJ/kg °K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme </p></td><td><p class="gasproperty"> 488.5 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -88.6 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 212 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty"> 37.64 bar</p></td></tr></table></div></div></div></div><div id="gasx4" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop4" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Ammonia.png" /><div class="gasletter">Ammoniak</div></td><td><img src="media/images/yellow.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/aetzend_b.jpg" ><img  src="media/images/aetzend_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/giftig_b.jpg" ><img  src="media/images/giftig_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Warnung_b.jpg" ><img  src="media/images/Warnung_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/gesundheitsschaedlich_b.jpg" ><img  src="media/images/gesundheitsschaedlich_b.jpg" class="safetysymbol" /></a><p class="gashelp" >giftiges, ätzendes, schwer entflammbares Gas mit charakteristischem Geruch, verflüssigt, leichter als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 17.304 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.7714 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.5966  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 2.0757 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 0.6819 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> 132.35 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 113.53 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -33.3 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 242 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme  </p></td><td><p class="gasproperty"> 1368.11 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty"> 8.5737 bar</p></td></tr></table></div></div></div></div><div id="gasx5" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop5" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Ethylene.png" /><div class="gasletter">Ethylen</div></td><td><img src="media/images/red_1.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/brennbar_b.jpg" ><img  src="media/images/brennbar_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Warnung_b.jpg" ><img  src="media/images/Warnung_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, brennbares Gas mit leicht süßlichem Geruch, verflüssigt, leichter als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 28.054 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.2611 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.9754  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 1.538 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 208 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -100.4 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 0.5679 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme </p></td><td><p class="gasproperty"> 482.6 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty"> - bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> 9.19 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 50.404 bar</p></td></tr></table></div></div></div></div><div id="gasx6" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop6" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Chlorine.png" /><div class="gasletter">Chlor</div></td><td><img src="media/images/yellow_1.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/aetzend_b.jpg" ><img  src="media/images/aetzend_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/giftig_b.jpg" ><img  src="media/images/giftig_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/oxidierend_b.jpg" ><img  src="media/images/oxidierend_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Gelb-grünes, giftiges, korrosives, ätzendes Gas mit stechendem Geruch, verflüssigt, schwerer als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 70.906 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 3.2149 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 2.4865  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 0.485 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 1.5625 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> 143.81 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 79.914 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 88.4 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme  </p></td><td><p class="gasproperty"> 288.09 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt  </p></td><td><p class="gasproperty"> -34 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty"> 6.776 bar</p></td></tr></table></div></div></div></div><div id="gasx7" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop7" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/HydrogenChloride.png" /><div class="gasletter">Chlorwasserstoff</div></td><td><img src="media/images/yellow_2.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/aetzend_b.jpg" ><img  src="media/images/aetzend_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/giftig_b.jpg" ><img  src="media/images/giftig_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, giftiges, ätzendes, korrosives Gas, verflüssigt, schwerer als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 36.461 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.6423 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.2702  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 0.7987 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 1.1906 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> 51.48 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 83.1 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 139 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme  </p></td><td><p class="gasproperty"> 443 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt  </p></td><td><p class="gasproperty"> -85 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty"> 42.6 bar</p></td></tr></table></div></div></div></div><div id="gasx8" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop8" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Nitrousoxide.png" /><div class="gasletter">Distickstoffoxid</div></td><td><img src="media/images/blue.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/oxidierend_b.jpg" ><img  src="media/images/oxidierend_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchloses, brandförderndes, narkotisierendes Gas, verflüssigt, schwerer als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 44.013 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.9781 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.5299  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 0.8795 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 1.281 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> 36.41 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 72.4 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 173 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme  </p></td><td><p class="gasproperty"> 376 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt  </p></td><td><p class="gasproperty"> -88.5 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty"> 50.599 bar</p></td></tr></table></div></div></div></div><div id="gasx9" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop9" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton"  moveTo="calc9" icon="media/img/calculator.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Carbondioxide.png" /><div class="gasletter">Kohlendioxid</div></td><td><img src="media/images/grey.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchloses, erstickend wirkendes Gas, verflüssigt, schwerer als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 44.0098 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> 31.06 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 73.825 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> subl.  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.9767 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 164 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.5289  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 0.8504 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Sublimationspunkt </p></td><td><p class="gasproperty"> -78.5 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Sublimationswärme </p></td><td><p class="gasproperty"> 573.02 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty"> 57.258 bar</p></td></tr></table></div></div></div><div  data-dojo-type="dojox/mobile/View" id="calc9"><h1 data-dojo-type="dojox/mobile/Heading" label="Gas calculator"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="prop9" icon="media/img/properties.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><div class="gasletter"><img class="gasformula" src="media/images/Carbondioxide.png" />
+&nbsp;Kohlendioxid</td><td style="float:right;"><button data-dojo-type="dojox/mobile/Button"  style="float:right;" onClick='reset("Carbon dioxide");'>Reset</button></div></td></tr></table><div style="margin:10px;"></div><table><tr><td><input dojo-data-type="dojox/mobile/TextBox" type='number' value="1.0" id="originKohlendioxid" class="conversionbutton" onChange='calculatei(""); ' /></td></tr></table><div><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromgal.Kohlendioxid" onClick='clickfrom("gal.","Kohlendioxid");'>gal.</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromkgKohlendioxid" onClick='clickfrom("kg","Kohlendioxid");'>kg</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromlKohlendioxid" onClick='clickfrom("l","Kohlendioxid");'>l</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromlb.Kohlendioxid" onClick='clickfrom("lb.","Kohlendioxid");'>lb.</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="froml minKohlendioxid" onClick='clickfrom("l min","Kohlendioxid");'>l min</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromm3Kohlendioxid" onClick='clickfrom("m3","Kohlendioxid");'>m3</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromm3 hKohlendioxid" onClick='clickfrom("m3 h","Kohlendioxid");'>m3 h</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromNm3Kohlendioxid" onClick='clickfrom("Nm3","Kohlendioxid");'>Nm3</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromNm hKohlendioxid" onClick='clickfrom("Nm h","Kohlendioxid");'>Nm h</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromscfKohlendioxid" onClick='clickfrom("scf","Kohlendioxid");'>scf</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromtKohlendioxid" onClick='clickfrom("t","Kohlendioxid");'>t</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromtpdKohlendioxid" onClick='clickfrom("tpd","Kohlendioxid");'>tpd</button></div></div><div data-dojo-type="dojox/mobile/RoundRect" ><table><tr><td><input data-dojo-type="dojox/mobile/TextBox"  id="resultKohlendioxid" class="conversionbutton"  onChange = 'reversecalculatei("Kohlendioxid");' /></td></tr></table></div><div data-dojo-type="dojox/mobile/RoundRect" ><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="togal.Kohlendioxid" onClick='clickto("gal.","Kohlendioxid");'>gal.</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tokgKohlendioxid" onClick='clickto("kg","Kohlendioxid");'>kg</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tolKohlendioxid" onClick='clickto("l","Kohlendioxid");'>l</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tolb.Kohlendioxid" onClick='clickto("lb.","Kohlendioxid");'>lb.</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tol minKohlendioxid" onClick='clickto("l min","Kohlendioxid");'>l min</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tom3Kohlendioxid" onClick='clickto("m3","Kohlendioxid");'>m3</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tom3 hKohlendioxid" onClick='clickto("m3 h","Kohlendioxid");'>m3 h</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toNm3Kohlendioxid" onClick='clickto("Nm3","Kohlendioxid");'>Nm3</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toNm hKohlendioxid" onClick='clickto("Nm h","Kohlendioxid");'>Nm h</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toscfKohlendioxid" onClick='clickto("scf","Kohlendioxid");'>scf</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="totKohlendioxid" onClick='clickto("t","Kohlendioxid");'>t</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="totpdKohlendioxid" onClick='clickto("tpd","Kohlendioxid");'>tpd</button></div><div data-dojo-type="dojox/mobile/RoundRect" ><p id="unithelp"><b>Definitionen:</b><table><tr><td style="width:100px;"><b>m<sup>3</sup></b></td><td> Value at 1000 mbar, 15°C </td></tr><tr><td style="width:100px;"><b>Nm<sup>3</sup></b></td><td> Value at1013 mbar, 0°C </td></tr><tr><td style="width:100px;"><b>sm<sup>3</sup></b></td><td> Value at 981 mbar, 15°C </td></tr><tr><td style="width:100px;"><b>l<sup>&nbsp;</sup></b></td><td> liquid volume </td></tr></table></p></div></div></div></div><div id="gasx10" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop10" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Carbonmonoxide.png" /><div class="gasletter">Kohlenmonoxid</div></td><td><img src="media/images/yellow_3.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/brennbar_b.jpg" ><img  src="media/images/brennbar_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/giftig_b.jpg" ><img  src="media/images/giftig_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/gesundheitsschaedlich_b.jpg" ><img  src="media/images/gesundheitsschaedlich_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchloses, giftiges, brennbares Gas, verdichtet, leichter als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 28.0104 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 0.79141 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> -140.3 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 24.935 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 1.04068 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 249 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.2508 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.9672  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt  </p></td><td><p class="gasproperty"> -192 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme  </p></td><td><p class="gasproperty"> 214.84 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty">   bar</p></td></tr></table></div></div></div></div><div id="gasx11" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop11" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Krypton.png" /><div class="gasletter">Krypton</div></td><td><img src="media/images/light_green.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchloses Edelgas, verdichtet, schwerer als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 83.8 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 3.7491 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 2.8997  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 0.24809 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 2.413 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> -63.75 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 55.02 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 95.1 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -153 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme  </p></td><td><p class="gasproperty"> 107.41 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty">   bar</p></td></tr></table></div></div></div></div><div id="gasx12" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop12" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton"  moveTo="calc12" icon="media/img/calculator.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Helium.png" /><div class="gasletter">Helium</div></td><td><img src="media/images/brown.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchloses Edelgas, verdichtet, sehr viel leichter als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 4.0026 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 0.125 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> -267.85 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 2.2748 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.1785 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 1500 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 5.19412 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.138  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme </p></td><td><p class="gasproperty"> 20.413 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -269 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty">   bar</p></td></tr></table></div></div></div><div  data-dojo-type="dojox/mobile/View" id="calc12"><h1 data-dojo-type="dojox/mobile/Heading" label="Gas calculator"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="prop12" icon="media/img/properties.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><div class="gasletter"><img class="gasformula" src="media/images/Helium.png" />
+&nbsp;Helium</td><td style="float:right;"><button data-dojo-type="dojox/mobile/Button"  style="float:right;" onClick='reset("Helium");'>Reset</button></div></td></tr></table><div style="margin:10px;"></div><table><tr><td><input dojo-data-type="dojox/mobile/TextBox" type='number' value="1.0" id="originHelium" class="conversionbutton" onChange='calculatei(""); ' /></td></tr></table><div><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromgal.Helium" onClick='clickfrom("gal.","Helium");'>gal.</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromkgHelium" onClick='clickfrom("kg","Helium");'>kg</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromlHelium" onClick='clickfrom("l","Helium");'>l</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromlb.Helium" onClick='clickfrom("lb.","Helium");'>lb.</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="froml minHelium" onClick='clickfrom("l min","Helium");'>l min</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromm3Helium" onClick='clickfrom("m3","Helium");'>m3</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromm3 hHelium" onClick='clickfrom("m3 h","Helium");'>m3 h</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromNm3Helium" onClick='clickfrom("Nm3","Helium");'>Nm3</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromNm hHelium" onClick='clickfrom("Nm h","Helium");'>Nm h</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromscfHelium" onClick='clickfrom("scf","Helium");'>scf</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromtHelium" onClick='clickfrom("t","Helium");'>t</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromtpdHelium" onClick='clickfrom("tpd","Helium");'>tpd</button></div></div><div data-dojo-type="dojox/mobile/RoundRect" ><table><tr><td><input data-dojo-type="dojox/mobile/TextBox"  id="resultHelium" class="conversionbutton"  onChange = 'reversecalculatei("Helium");' /></td></tr></table></div><div data-dojo-type="dojox/mobile/RoundRect" ><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="togal.Helium" onClick='clickto("gal.","Helium");'>gal.</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tokgHelium" onClick='clickto("kg","Helium");'>kg</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tolHelium" onClick='clickto("l","Helium");'>l</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tolb.Helium" onClick='clickto("lb.","Helium");'>lb.</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tol minHelium" onClick='clickto("l min","Helium");'>l min</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tom3Helium" onClick='clickto("m3","Helium");'>m3</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tom3 hHelium" onClick='clickto("m3 h","Helium");'>m3 h</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toNm3Helium" onClick='clickto("Nm3","Helium");'>Nm3</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toNm hHelium" onClick='clickto("Nm h","Helium");'>Nm h</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toscfHelium" onClick='clickto("scf","Helium");'>scf</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="totHelium" onClick='clickto("t","Helium");'>t</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="totpdHelium" onClick='clickto("tpd","Helium");'>tpd</button></div><div data-dojo-type="dojox/mobile/RoundRect" ><p id="unithelp"><b>Definitionen:</b><table><tr><td style="width:100px;"><b>m<sup>3</sup></b></td><td> Value at 1000 mbar, 15°C </td></tr><tr><td style="width:100px;"><b>Nm<sup>3</sup></b></td><td> Value at1013 mbar, 0°C </td></tr><tr><td style="width:100px;"><b>sm<sup>3</sup></b></td><td> Value at 981 mbar, 15°C </td></tr><tr><td style="width:100px;"><b>l<sup>&nbsp;</sup></b></td><td> liquid volume </td></tr></table></p></div></div></div></div><div id="gasx13" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop13" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Methane.png" /><div class="gasletter">Methan</div></td><td><img src="media/images/red_2.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/brennbar_b.jpg" ><img  src="media/images/brennbar_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchloses, brennbares Gas, verdichtet, leichter als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 16.043 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 0.4228 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> -82.59 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 45.99 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.7175 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 338.9 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.5549  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -162 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme </p></td><td><p class="gasproperty"> 510.3 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 2.232 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty">   bar</p></td></tr></table></div></div></div></div><div id="gasx14" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop14" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Propane.png" /><div class="gasletter">Propan</div></td><td><img src="media/images/red_3.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/brennbar_b.jpg" ><img  src="media/images/brennbar_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchloses, brennbares Gas, verflüssigt, schwerer als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 44.096 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.554  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 0.5812 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> 96.7 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 42.477 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 2.0098 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 180 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt  </p></td><td><p class="gasproperty"> -42.1 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 1.696 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme  </p></td><td><p class="gasproperty"> 425.4 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty"> 8.367 bar</p></td></tr></table></div></div></div></div><div id="gasx15" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop15" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Neon.png" /><div class="gasletter">Neon</div></td><td><img src="media/images/light_green_1.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchloses Edelgas, verdichtet, leichter als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 20.179 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 1.206 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> -228.75 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 26.54 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -246 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.9 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.696  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 486 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme </p></td><td><p class="gasproperty"> 86.07 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 1.03 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty">   bar</p></td></tr></table></div></div></div></div><div id="gasx16" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop16" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton"  moveTo="calc16" icon="media/img/calculator.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Oxygen.png" /><div class="gasletter">Sauerstoff</div></td><td><img src="media/images/blue_1.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchloses, brandförderndes Gas, verdichtet, geringfügig schwerer als Luft.</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 31.9988 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.429 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.1052  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 1.141 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> -118.57 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 50.422 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 0.9196 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 261.5 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -183 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme </p></td><td><p class="gasproperty"> 212.5 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty">   bar</p></td></tr></table></div></div></div><div  data-dojo-type="dojox/mobile/View" id="calc16"><h1 data-dojo-type="dojox/mobile/Heading" label="Gas calculator"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="prop16" icon="media/img/properties.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><div class="gasletter"><img class="gasformula" src="media/images/Oxygen.png" />
+&nbsp;Sauerstoff</td><td style="float:right;"><button data-dojo-type="dojox/mobile/Button"  style="float:right;" onClick='reset("Oxygen");'>Reset</button></div></td></tr></table><div style="margin:10px;"></div><table><tr><td><input dojo-data-type="dojox/mobile/TextBox" type='number' value="1.0" id="originSauerstoff" class="conversionbutton" onChange='calculatei(""); ' /></td></tr></table><div><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromgal.Sauerstoff" onClick='clickfrom("gal.","Sauerstoff");'>gal.</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromkgSauerstoff" onClick='clickfrom("kg","Sauerstoff");'>kg</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromlSauerstoff" onClick='clickfrom("l","Sauerstoff");'>l</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromlb.Sauerstoff" onClick='clickfrom("lb.","Sauerstoff");'>lb.</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="froml minSauerstoff" onClick='clickfrom("l min","Sauerstoff");'>l min</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromm3Sauerstoff" onClick='clickfrom("m3","Sauerstoff");'>m3</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromm3 hSauerstoff" onClick='clickfrom("m3 h","Sauerstoff");'>m3 h</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromNm3Sauerstoff" onClick='clickfrom("Nm3","Sauerstoff");'>Nm3</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromNm hSauerstoff" onClick='clickfrom("Nm h","Sauerstoff");'>Nm h</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromscfSauerstoff" onClick='clickfrom("scf","Sauerstoff");'>scf</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromtSauerstoff" onClick='clickfrom("t","Sauerstoff");'>t</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromtpdSauerstoff" onClick='clickfrom("tpd","Sauerstoff");'>tpd</button></div></div><div data-dojo-type="dojox/mobile/RoundRect" ><table><tr><td><input data-dojo-type="dojox/mobile/TextBox"  id="resultSauerstoff" class="conversionbutton"  onChange = 'reversecalculatei("Sauerstoff");' /></td></tr></table></div><div data-dojo-type="dojox/mobile/RoundRect" ><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="togal.Sauerstoff" onClick='clickto("gal.","Sauerstoff");'>gal.</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tokgSauerstoff" onClick='clickto("kg","Sauerstoff");'>kg</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tolSauerstoff" onClick='clickto("l","Sauerstoff");'>l</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tolb.Sauerstoff" onClick='clickto("lb.","Sauerstoff");'>lb.</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tol minSauerstoff" onClick='clickto("l min","Sauerstoff");'>l min</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tom3Sauerstoff" onClick='clickto("m3","Sauerstoff");'>m3</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tom3 hSauerstoff" onClick='clickto("m3 h","Sauerstoff");'>m3 h</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toNm3Sauerstoff" onClick='clickto("Nm3","Sauerstoff");'>Nm3</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toNm hSauerstoff" onClick='clickto("Nm h","Sauerstoff");'>Nm h</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toscfSauerstoff" onClick='clickto("scf","Sauerstoff");'>scf</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="totSauerstoff" onClick='clickto("t","Sauerstoff");'>t</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="totpdSauerstoff" onClick='clickto("tpd","Sauerstoff");'>tpd</button></div><div data-dojo-type="dojox/mobile/RoundRect" ><p id="unithelp"><b>Definitionen:</b><table><tr><td style="width:100px;"><b>m<sup>3</sup></b></td><td> Value at 1000 mbar, 15°C </td></tr><tr><td style="width:100px;"><b>Nm<sup>3</sup></b></td><td> Value at1013 mbar, 0°C </td></tr><tr><td style="width:100px;"><b>sm<sup>3</sup></b></td><td> Value at 981 mbar, 15°C </td></tr><tr><td style="width:100px;"><b>l<sup>&nbsp;</sup></b></td><td> liquid volume </td></tr></table></p></div></div></div></div><div id="gasx17" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop17" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton"  moveTo="calc17" icon="media/img/calculator.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Nitrogen.png" /><div class="gasletter">Stickstoff</div></td><td><img src="media/images/black.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >farbloses, geruchloses, erstickend wirkendes Gas, verdichtet, geringfügig leichter als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 28.0134 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 1.25 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.9671  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 1.04 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 0.8085 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> -148.89 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 34.1 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 256.6 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -196 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme </p></td><td><p class="gasproperty"> 198.6 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty">   bar</p></td></tr></table></div></div></div><div  data-dojo-type="dojox/mobile/View" id="calc17"><h1 data-dojo-type="dojox/mobile/Heading" label="Gas calculator"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="prop17" icon="media/img/properties.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><div class="gasletter"><img class="gasformula" src="media/images/Nitrogen.png" />
+&nbsp;Stickstoff</td><td style="float:right;"><button data-dojo-type="dojox/mobile/Button"  style="float:right;" onClick='reset("Nitrogen");'>Reset</button></div></td></tr></table><div style="margin:10px;"></div><table><tr><td><input dojo-data-type="dojox/mobile/TextBox" type='number' value="1.0" id="originStickstoff" class="conversionbutton" onChange='calculatei(""); ' /></td></tr></table><div><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromgal.Stickstoff" onClick='clickfrom("gal.","Stickstoff");'>gal.</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromkgStickstoff" onClick='clickfrom("kg","Stickstoff");'>kg</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromlStickstoff" onClick='clickfrom("l","Stickstoff");'>l</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromlb.Stickstoff" onClick='clickfrom("lb.","Stickstoff");'>lb.</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="froml minStickstoff" onClick='clickfrom("l min","Stickstoff");'>l min</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromm3Stickstoff" onClick='clickfrom("m3","Stickstoff");'>m3</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromm3 hStickstoff" onClick='clickfrom("m3 h","Stickstoff");'>m3 h</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromNm3Stickstoff" onClick='clickfrom("Nm3","Stickstoff");'>Nm3</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromNm hStickstoff" onClick='clickfrom("Nm h","Stickstoff");'>Nm h</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromscfStickstoff" onClick='clickfrom("scf","Stickstoff");'>scf</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromtStickstoff" onClick='clickfrom("t","Stickstoff");'>t</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromtpdStickstoff" onClick='clickfrom("tpd","Stickstoff");'>tpd</button></div></div><div data-dojo-type="dojox/mobile/RoundRect" ><table><tr><td><input data-dojo-type="dojox/mobile/TextBox"  id="resultStickstoff" class="conversionbutton"  onChange = 'reversecalculatei("Stickstoff");' /></td></tr></table></div><div data-dojo-type="dojox/mobile/RoundRect" ><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="togal.Stickstoff" onClick='clickto("gal.","Stickstoff");'>gal.</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tokgStickstoff" onClick='clickto("kg","Stickstoff");'>kg</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tolStickstoff" onClick='clickto("l","Stickstoff");'>l</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tolb.Stickstoff" onClick='clickto("lb.","Stickstoff");'>lb.</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tol minStickstoff" onClick='clickto("l min","Stickstoff");'>l min</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tom3Stickstoff" onClick='clickto("m3","Stickstoff");'>m3</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tom3 hStickstoff" onClick='clickto("m3 h","Stickstoff");'>m3 h</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toNm3Stickstoff" onClick='clickto("Nm3","Stickstoff");'>Nm3</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toNm hStickstoff" onClick='clickto("Nm h","Stickstoff");'>Nm h</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toscfStickstoff" onClick='clickto("scf","Stickstoff");'>scf</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="totStickstoff" onClick='clickto("t","Stickstoff");'>t</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="totpdStickstoff" onClick='clickto("tpd","Stickstoff");'>tpd</button></div><div data-dojo-type="dojox/mobile/RoundRect" ><p id="unithelp"><b>Definitionen:</b><table><tr><td style="width:100px;"><b>m<sup>3</sup></b></td><td> Value at 1000 mbar, 15°C </td></tr><tr><td style="width:100px;"><b>Nm<sup>3</sup></b></td><td> Value at1013 mbar, 0°C </td></tr><tr><td style="width:100px;"><b>sm<sup>3</sup></b></td><td> Value at 981 mbar, 15°C </td></tr><tr><td style="width:100px;"><b>l<sup>&nbsp;</sup></b></td><td> liquid volume </td></tr></table></p></div></div></div></div><div id="gasx18" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop18" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton"  moveTo="calc18" icon="media/img/calculator.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Hydrogen.png" /><div class="gasletter">Wasserstoff</div></td><td><img src="media/images/red_4.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/brennbar_b.jpg" ><img  src="media/images/brennbar_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchloses, brennbares Gas, verdichtet, sehr viel leichter als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.0695  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 14.3 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 0.07079 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> -239.96 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 13.15 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 0.0899 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 2.0158 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 1861 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -252.76 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme  </p></td><td><p class="gasproperty"> 445.6 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty">   bar</p></td></tr></table></div></div></div><div  data-dojo-type="dojox/mobile/View" id="calc18"><h1 data-dojo-type="dojox/mobile/Heading" label="Gas calculator"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="prop18" icon="media/img/properties.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><div class="gasletter"><img class="gasformula" src="media/images/Hydrogen.png" />
+&nbsp;Wasserstoff</td><td style="float:right;"><button data-dojo-type="dojox/mobile/Button"  style="float:right;" onClick='reset("Hydrogen");'>Reset</button></div></td></tr></table><div style="margin:10px;"></div><table><tr><td><input dojo-data-type="dojox/mobile/TextBox" type='number' value="1.0" id="originWasserstoff" class="conversionbutton" onChange='calculatei(""); ' /></td></tr></table><div><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromgal.Wasserstoff" onClick='clickfrom("gal.","Wasserstoff");'>gal.</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromkgWasserstoff" onClick='clickfrom("kg","Wasserstoff");'>kg</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromlWasserstoff" onClick='clickfrom("l","Wasserstoff");'>l</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromlb.Wasserstoff" onClick='clickfrom("lb.","Wasserstoff");'>lb.</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="froml minWasserstoff" onClick='clickfrom("l min","Wasserstoff");'>l min</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromm3Wasserstoff" onClick='clickfrom("m3","Wasserstoff");'>m3</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromm3 hWasserstoff" onClick='clickfrom("m3 h","Wasserstoff");'>m3 h</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromNm3Wasserstoff" onClick='clickfrom("Nm3","Wasserstoff");'>Nm3</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromNm hWasserstoff" onClick='clickfrom("Nm h","Wasserstoff");'>Nm h</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromscfWasserstoff" onClick='clickfrom("scf","Wasserstoff");'>scf</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromtWasserstoff" onClick='clickfrom("t","Wasserstoff");'>t</button><button data-dojo-type="dojox/mobile/Button" class="frombutton" id="fromtpdWasserstoff" onClick='clickfrom("tpd","Wasserstoff");'>tpd</button></div></div><div data-dojo-type="dojox/mobile/RoundRect" ><table><tr><td><input data-dojo-type="dojox/mobile/TextBox"  id="resultWasserstoff" class="conversionbutton"  onChange = 'reversecalculatei("Wasserstoff");' /></td></tr></table></div><div data-dojo-type="dojox/mobile/RoundRect" ><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="togal.Wasserstoff" onClick='clickto("gal.","Wasserstoff");'>gal.</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tokgWasserstoff" onClick='clickto("kg","Wasserstoff");'>kg</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tolWasserstoff" onClick='clickto("l","Wasserstoff");'>l</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tolb.Wasserstoff" onClick='clickto("lb.","Wasserstoff");'>lb.</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tol minWasserstoff" onClick='clickto("l min","Wasserstoff");'>l min</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tom3Wasserstoff" onClick='clickto("m3","Wasserstoff");'>m3</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="tom3 hWasserstoff" onClick='clickto("m3 h","Wasserstoff");'>m3 h</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toNm3Wasserstoff" onClick='clickto("Nm3","Wasserstoff");'>Nm3</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toNm hWasserstoff" onClick='clickto("Nm h","Wasserstoff");'>Nm h</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="toscfWasserstoff" onClick='clickto("scf","Wasserstoff");'>scf</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="totWasserstoff" onClick='clickto("t","Wasserstoff");'>t</button><button data-dojo-type="dojox/mobile/Button" class="tobutton" id="totpdWasserstoff" onClick='clickto("tpd","Wasserstoff");'>tpd</button></div><div data-dojo-type="dojox/mobile/RoundRect" ><p id="unithelp"><b>Definitionen:</b><table><tr><td style="width:100px;"><b>m<sup>3</sup></b></td><td> Value at 1000 mbar, 15°C </td></tr><tr><td style="width:100px;"><b>Nm<sup>3</sup></b></td><td> Value at1013 mbar, 0°C </td></tr><tr><td style="width:100px;"><b>sm<sup>3</sup></b></td><td> Value at 981 mbar, 15°C </td></tr><tr><td style="width:100px;"><b>l<sup>&nbsp;</sup></b></td><td> liquid volume </td></tr></table></p></div></div></div></div><div id="gasx19" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop19" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Xenon.png" /><div class="gasletter">Xenon</div></td><td><img src="media/images/light_green_2.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, geruchsloses Edelgas, verdichtet, schwerer als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 131.3 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 5.8962 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 4.561  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 0.1583 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 2.94 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> 16.59 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 58.4 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 55.5 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt </p></td><td><p class="gasproperty"> -108 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme  </p></td><td><p class="gasproperty"> 95.422 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty">   bar</p></td></tr></table></div></div></div></div><div id="gasx20" data-dojo-type="dojox/mobile/View"  ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><div data-dojo-type="dojox/mobile/View"  id="prop20" ><h1 data-dojo-type="dojox/mobile/Heading" label="Gas properties"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/info.png" style="float:right;" ></div></h1><div data-dojo-type="dojox/mobile/ScrollableView"  ><div data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td><img class="gasformula" src="media/images/Sulphurdioxide.png" /><div class="gasletter">Schwefeldioxid</div></td><td><img src="media/images/yellow_4.png" class="gassymbol"  /></td></tr><tr><td><a data-dojo-type="dojox/image/LightboxNano" href="media/images/aetzend_b.jpg" ><img  src="media/images/aetzend_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/giftig_b.jpg" ><img  src="media/images/giftig_b.jpg" class="safetysymbol" /></a><a data-dojo-type="dojox/image/LightboxNano" href="media/images/Flasche_b.jpg" ><img  src="media/images/Flasche_b.jpg" class="safetysymbol" /></a><p class="gashelp" >Farbloses, stechend riechendes, giftiges, korrosives Gas, verflüssigt, schwerer als Luft</p></td><td></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Molekulargewicht </p></td><td><p class="gasproperty"> 64.059 g/mol</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Gasdichte bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 2.9285 kg/m<sup>&nbsp;3</sup></p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dichteverhältnis zu Luft bei 0 °C und 1013 mbar </p></td><td><p class="gasproperty"> 2.265  </p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Spezifische Wärmekapazität bei 25 °C </p></td><td><p class="gasproperty"> 0.6224 kJ/kg K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Flüssigdichte am Siedepunkt </p></td><td><p class="gasproperty"> 1.458 kg/l</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritische Temperatur </p></td><td><p class="gasproperty"> 157.55 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Kritischer Druck </p></td><td><p class="gasproperty"> 78.839 bar</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Wärmeleitfähigkeit bei 25 °C </p></td><td><p class="gasproperty"> 99.4 10<sup>&nbsp;-4</sup> W/m K</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Verdampfungswärme  </p></td><td><p class="gasproperty"> 390 kJ/kg</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Siedepunkt  </p></td><td><p class="gasproperty"> -10 °C</p></td></tr></table></div><div class="reduce" data-dojo-type="dojox/mobile/RoundRect" ><table width="100%"><tr><td width="60%"><p class="gasname">Dampfdruck bei 20 °C </p></td><td><p class="gasproperty"> 3.305 bar</p></td></tr></table></div></div></div></div><div id="message_generic" data-dojo-type="dojox/mobile/Overlay" ><h1 data-dojo-type="dojox/mobile/Heading"  ><div  style="float:right;margin-right:40px;" data-dojo-type="dojox/mobile/ToolBarButton" onclick="hidepopup('message_generic')" icon="media/img/back.png" ></div></h1><p class="centeredmessage" id="generic_text" ></p></div><div id="message_contact" data-dojo-type="dojox/mobile/Overlay" ><h1 data-dojo-type="dojox/mobile/Heading"  ><div  style="float:right;margin-right:40px;" data-dojo-type="dojox/mobile/ToolBarButton" onclick="hidepopup('message_contact')" icon="media/img/back.png" ></div></h1><p class="centeredmessage" >No valid E-mail provided!</p></div><div id="message_ie" data-dojo-type="dojox/mobile/Overlay" ><h1 data-dojo-type="dojox/mobile/Heading"  ><div  style="float:right;margin-right:40px;" data-dojo-type="dojox/mobile/ToolBarButton" onclick="hidepopup('message_ie')" icon="media/img/back.png" ></div></h1><p class="centeredmessage" >We do not support IE < version 9!</p></div><div class="transparentscreen" id="spinner" data-dojo-type="dojox/mobile/Overlay"  ><p class="centered2"><img src="media/img/ajax-loader.gif" /></p></div><div id="legal" data-dojo-type="dojox/mobile/View" ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><h1 data-dojo-type="dojox/mobile/Heading"  data-dojo-props="label:'&nbsp;More'"  class="correctmargin"><div  style="float:right;margin-right:40px;" data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/back.png" ></div></h1><div data-dojo-type="dojox/mobile/RoundRect"><ul data-dojo-type=""dojox/mobile/EdgeToEdgeList"><li data-dojo-type="dojox/mobile/ListItem" moveTo="liability">Disclaimer</li><li data-dojo-type="dojox/mobile/ListItem" moveTo="privacy">Privacy policy</li><li data-dojo-type="dojox/mobile/ListItem" moveTo="contact">Kontakt</li><li data-dojo-type="dojox/mobile/ListItem" moveTo="sitemap">About Messer</li><li data-dojo-type="dojox/mobile/ListItem" moveTo="impressum">Impressum</li></ul></div></div><div id="copyright" data-dojo-type="dojox/mobile/View" ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><h1 data-dojo-type="dojox/mobile/Heading" label="&nbsp;Impressum" ><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div></h1><div  data-dojo-type="dojox/mobile/ScrollableView" ><div data-dojo-type="dojox/mobile/RoundRect">
+
+
+  
+
+
+
+Alle Informationen unseres Internet-Angebotes wurden sorgfältig geprüft. Wir bemühen uns, dieses Informationsangebot stetig zu erweitern und zu aktualisieren. Eine Garantie für die Vollständigkeit, Richtigkeit und letzte Aktualität kann jedoch nicht übernommen werden.
+<br /><br /><b>Herausgeber:</b><br/>
+Messer Group GmbH
+ <br /><br /><b>Vertretungsberechtigte Personen:</b><br />
+Stefan Messer und<br>
+Dr. Hans-Gerd Wienands
+<br />
+Messer Group GmbH<br />
+Messer-Platz 1<br />
+65812 Bad Soden<br /><br />
+Tel.: +49 6196 7760-0<br />
+Fax: +49 6196 7760-442<br /><br /><br />
+
+
+Amtsgericht Frankfurt HR B 73307<br />
+Ust-Ident-Nummer: DE 813944858<br /><br /><br /><b>Verantwortlich:</b><br />
+Messer Group GmbH<br />
+Senior Manager e-Sales<br />
+Marc Dierckx<br /><br />
+Gahlingspfad 31<br />
+D-47803 Krefeld<br /><br />
+Tel.: +49 (0)2151 7811-0<br />
+Fax: +49 (0)2151 7811-501<br /><br />
+Copyright<sup>©</sup> 2012 Messer Group GmbH. Alle Rechte sind vorbehalten.
+
+
+
+
+
+
+
+
+
+
+</div></div></div><div id="contact" data-dojo-type="dojox/mobile/View" ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><h1 data-dojo-type="dojox/mobile/Heading" label="&nbsp;Kontakt"   class="correctmargin"><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo=legal icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div></h1><div  data-dojo-type="dojox/mobile/ScrollableView" ><div data-dojo-type="dojox/mobile/RoundRect"><form method="post" action="javascript:submitcontact()"><p type="font-size:10px;"   class="detail"> (*) fields are compulsary</p><table><tr><td>
+Name(*)</td><td><input data-dojo-type="dojox/mobile/TextBox" id="id_name" type="text" name="name" /></td></tr><tr><td>
+Tel(*)</td><td><input data-dojo-type="dojox/mobile/TextBox"id="id_tel" type="text" name="tel" /></td></tr><tr><td>
+E-mail(*)</td><td><input data-dojo-type="dojox/mobile/TextBox"  id="id_sender" type="text" name="sender" /></td></tr><tr><td>
+Bestreff</td><td><input data-dojo-type="dojox/mobile/TextBox"  id="id_subject" type="text" name="subject" /></td></tr><tr><td>
+Inhalt</td><td><textarea data-dojo-type="dojox/mobile/TextArea"  id="id_contents" name="contents" cols="50" rows="10"></textarea></td></tr></table><p id="response"></p><button data-dojo-type="dojox/mobile/Button" type="submit" >Submit</button></form></div></div></div><div id="privacy" data-dojo-type="dojox/mobile/View" ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><h1 data-dojo-type="dojox/mobile/Heading" label="&nbsp;Privacy Policy"  ><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png"style="float:right;margin-right:40px;" ></div></h1><div  data-dojo-type="dojox/mobile/ScrollableView" ><div data-dojo-type="dojox/mobile/RoundRect"><b>Erhebung persönlicher Daten</b><br>
+Wir freuen uns über Ihr Interesse an unserer Homepage und unserem Unternehmen. Beim Besuch dieser Webseiten werden durch unsere Webserver Informationen gespeichert. Ihre IP Adresse, die Sie von Ihrem Service Provider erhalten, gibt uns Auskunft darüber, von welcher Webseite aus Sie auf unsere Seiten gelangen, welche Seiten der Messer Group Sie besuchen, sowie Dauer und Datum Ihres Besuchs.<br><br><b>Nutzung und Weitergabe persönlicher Daten</b><br>
+Messer nutzt Ihre persönlichen Daten zur technischen Administration und Verbesserung der Webseiten, oder zur Bearbeitung Ihrer Anliegen/Anfragen. Soweit Sie uns personenbezogene Daten zur Verfügung gestellt haben, verwenden wir diese nur zur Beantwortung Ihrer Anfragen, zur Abwicklung mit Ihnen geschlossener Verträge und für die technische Administration.<br><br>
+
+Ihre personenbezogenen Daten werden an Dritte nur weitergegeben oder sonst übermittelt, wenn dies zum Zwecke der Vertragsabwicklung – insbesondere Weitergabe von Bestelldaten an Lieferanten – erforderlich ist, dies zu Abrechnungs- oder Versandzwecken erforderlich ist oder Sie zuvor eingewilligt haben. Sie haben das Recht, eine erteilte Einwilligung mit Wirkung für die Zukunft jederzeit zu widerrufen.<br><br><b>Webcontrolling und Cookies</b><br>
+Auf dieser Webseite werden mit Technologien der etracker GmbH (www.etracker.de) oder Google (www.google-analytics.com) Daten zu Marketing- und Optimierungszwecken gesammelt und gespeichert. Aus diesen Daten werden unter einem Pseudonym Nutzungsprofile erstellt. Hierzu können Cookies eingesetzt werden. Bei Cookies handelt es sich um kleine Textdateien, die lokal im Zwischenspeicher des Internetbrowsers des Seitenbesuchers gespeichert werden. Die Cookies ermöglichen die Wiedererkennung des Internetbrowsers. Die mit den etracker-Technologien erhobenen Daten werden ohne die gesondert erteilte Zustimmung des Betroffenen nicht dazu benutzt, den Besucher dieser Website persönlich zu identifizieren und nicht mit personenbezogenen Daten über den Träger des Pseudonyms zusammengeführt. Der Datenerhebung und -speicherung kann jederzeit mit Wirkung für die Zukunft widersprochen werden.<br><br><b>Datensicherheit</b><br>
+Wir haben Maßnahmen getroffen, um Ihre Daten zu schützen. Wir bemühen uns, die Sicherheitsmaßnahmen immer auf dem neuesten Stand der Technik zu halten.<br></div></div></div><div id="liability" data-dojo-type="dojox/mobile/View" ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><h1 data-dojo-type="dojox/mobile/Heading" label="&nbsp;Disclaimer" ><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div></h1><div  data-dojo-type="dojox/mobile/ScrollableView" ><div data-dojo-type="dojox/mobile/RoundRect"><b>Haftung für Inhalte</b><br />
+Die Inhalte unserer Website wurden von uns mit größter Sorgfalt erarbeitet und zusammengestellt. Die Haftung für die Aktualität, Vollständigkeit oder Qualität der Inhalte ist ausgeschlossen.
+Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei bekannt werden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br /><br /><b>Links </b><br />
+Unsere Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verknüpften Seiten sind wir nicht verantwortlich und machen uns diese auch nicht zu Eigen. Daher ist eine Haftung für fremde Inhalten ausgeschlossen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten waren jedoch zum Zeitpunkt der Verlinkung frei von illegalen Inhalten. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei bekannt werden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.<br /><br /><b>Urheberrecht</b><br />
+Die elektronischen Datenbestände, Texte, Bilder, Grafiken, Layout und sonstigen Inhalte dieser Website sind urheberechtlich geschützt. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Verbreitung, Bearbeitung oder sonstige Verwertung, die nicht durch das Urhebergesetz oder anderen Gesetzen ausdrücklich gestattet ist bedarf unserer schriftlichen Zustimmung. Dies gilt auch für Inhalte dieser Website, die in fremde Seiten eingestellt werden oder anderweitig reproduziert werden. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Die Betreiber der Seiten sind bemüht, stets die Urheberrechte anderer zu beachten bzw. auf selbst erstellte sowie lizenzfreie Werke zurückzugreifen.<br /><br /><b>Pressebilder Copyright </b><br />
+Die Messer-Pressebilder, die zum Download auf unserer Internetseite zur Verfügung stehen, dürfen ausschließlich für eine journalistische Verwertung im Zusammenhang mit einer redaktionellen oder wissenschaftlichen Berichterstattung verwendet werden. Die Urheberrechte verbleiben in vollem Umfang bei Messer. Bilder, die für oben genannte Zwecke verwendet, verändert, vervielfältigt und oder elektronisch bearbeitet werden, müssen mit der Quellenangabe („Foto: Messer Group“) versehen werden. Eine gewerbliche Weitergabe an Dritte - in jeglicher Form - ist nicht gestattet. Die Nutzung der Pressebilder ist kostenfrei. Dafür bitten wir jedoch bei Printmedien um die Zusendung eines Belegexemplars, bei Film und elektronischen Medien um eine kurze Benachrichtigung.
+
+
+
+
+
+
+
+
+
+</div></div></div><div id="sitemap" data-dojo-type="dojox/mobile/View" ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><h1 data-dojo-type="dojox/mobile/Heading" label="&nbsp;About Messer"  ><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div></h1><div  data-dojo-type="dojox/mobile/ScrollableView" ><div data-dojo-type="dojox/mobile/RoundRect">
+        
+
+
+
+Messer ist der größte privat geführte Industriegasespezialist und in über 30 Ländern in Europa und Asien sowie in Peru, Algerien und Neuseeland mit insgesamt mehr als 60 operativen Gesellschaften aktiv. Die internationalen Aktivitäten werden aus dem Raum Frankfurt am Main gelenkt, die Steuerung der technischen Zentralfunktionen Logistik, Engineering und Produktion sowie Anwendungstechnik erfolgt aus Krefeld. 5.364 Mitarbeiter erwirtschafteten im Jahr 2012 einen konsolidierten Umsatz von 1,088 Milliarden Euro.<br /><br />
+
+Von Acetylen bis Xenon bietet die Messer Gruppe ein Produktportfolio, das als eines der größten im Markt gilt – das Unternehmen produziert Industriegase wie Sauerstoff, Stickstoff, Argon, Kohlendioxid, Wasserstoff, Helium, Schweißschutzgase, Spezialgase, medizinische Gase und viele verschiedene Gasgemische.<br /><br /></div></div></div><div id="impressum" data-dojo-type="dojox/mobile/View" ><div class="full" data-dojo-type="dojox/mobile/RoundRect"  ><div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div><div class="sitelogo"  ><img class="siteimage" src="media/img/gasdatalogo.png" /></div></div><h1 data-dojo-type="dojox/mobile/Heading" label="&nbsp;Impressum"  ><div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div></h1><div  data-dojo-type="dojox/mobile/ScrollableView" ><div data-dojo-type="dojox/mobile/RoundRect">
+    
+
+
+
+Alle Informationen unseres Internet-Angebotes wurden sorgfältig geprüft. Wir bemühen uns, dieses Informationsangebot stetig zu erweitern und zu aktualisieren. Eine Garantie für die Vollständigkeit, Richtigkeit und letzte Aktualität kann jedoch nicht übernommen werden.<br /><br /><b>Herausgeber:</b><br />
+Messer Group GmbH<br /><br /><b>Vertretungsberechtigte Personen:</b><br />
+Stefan Messer und Dr. Hans-Gerd Wienands<br /><br />
+
+Messer Group GmbH<br />
+Messer-Platz 1<br />
+65812 Bad Soden<br /><br />
+
+Tel.: +49 6196 7760-0<br />
+Fax: +49 6196 7760-442<br /><br />
+
+info@messergroup.com<br /><br />
+
+Amtsgericht Frankfurt HR B 73307<br />
+Ust-Ident-Nummer: DE 813944858<br /><br /><b>Verantwortlich:</b><br />
+Messer Group GmbH<br />
+Marc Dierckx<br /><br />
+
+Senior Manager e-Sales<br />
+Gahlingspfad 31<br />
+47803 Krefeld<br /><br />
+
+Tel.: +49 2151 7811-0<br />
+Fax: +49 2151 7811-598<br />
+marc.dierckx@messergroup.com<br /><br />
+
+ 
+
+Copyright© 2013 Messer Group GmbH. Alle Rechte sind vorbehalten.
+
+ 
+
+
+
+
+
+
+
+
+
+</div></div></div><script  data-dojo-config="async:false,parseOnLoad:true" src="media/js/1.9.1/dojo/dojo.js"  ></script><script type="text/javascript" src="media/android/de/jsi18n.js"></script><script  type="text/javascript" src="media/js/1.9.1/app/base.js"  ></script><script src="media/js/1.9.1/app/gasprops.js"  ></script><script type="text/javascript" >
+
+
+
+units = new Array() ;
+
+units[1] =  "gal." ;
+
+units[2] =  "kg" ;
+
+units[3] =  "l" ;
+
+units[4] =  "lb." ;
+
+units[5] =  "l min" ;
+
+units[6] =  "m3" ;
+
+units[7] =  "m3 h" ;
+
+units[8] =  "Nm3" ;
+
+units[9] =  "Nm h" ;
+
+units[10] =  "scf" ;
+
+units[11] =  "t" ;
+
+units[12] =  "tpd" ;
+
+factors= new Array() ;
+
+factors['Chlorwasserstoff'] = new Array() ;
+
+factors['Chlorwasserstoff']['gal.'] = new Array() ;
+
+factors['Chlorwasserstoff']['kg'] = new Array() ;
+
+factors['Chlorwasserstoff']['l'] = new Array() ;
+
+factors['Chlorwasserstoff']['lb.'] = new Array() ;
+
+factors['Chlorwasserstoff']['l min'] = new Array() ;
+
+factors['Chlorwasserstoff']['m3'] = new Array() ;
+
+factors['Chlorwasserstoff']['m3 h'] = new Array() ;
+
+factors['Chlorwasserstoff']['Nm3'] = new Array() ;
+
+factors['Chlorwasserstoff']['Nm h'] = new Array() ;
+
+factors['Chlorwasserstoff']['scf'] = new Array() ;
+
+factors['Chlorwasserstoff']['t'] = new Array() ;
+
+factors['Chlorwasserstoff']['tpd'] = new Array() ;
+
+
+factors['Helium'] = new Array() ;
+
+factors['Helium']['gal.'] = new Array() ;
+
+factors['Helium']['kg'] = new Array() ;
+
+factors['Helium']['l'] = new Array() ;
+
+factors['Helium']['lb.'] = new Array() ;
+
+factors['Helium']['l min'] = new Array() ;
+
+factors['Helium']['m3'] = new Array() ;
+
+factors['Helium']['m3 h'] = new Array() ;
+
+factors['Helium']['Nm3'] = new Array() ;
+
+factors['Helium']['Nm h'] = new Array() ;
+
+factors['Helium']['scf'] = new Array() ;
+
+factors['Helium']['t'] = new Array() ;
+
+factors['Helium']['tpd'] = new Array() ;
+
+
+factors['Kohlendioxid'] = new Array() ;
+
+factors['Kohlendioxid']['gal.'] = new Array() ;
+
+factors['Kohlendioxid']['kg'] = new Array() ;
+
+factors['Kohlendioxid']['l'] = new Array() ;
+
+factors['Kohlendioxid']['lb.'] = new Array() ;
+
+factors['Kohlendioxid']['l min'] = new Array() ;
+
+factors['Kohlendioxid']['m3'] = new Array() ;
+
+factors['Kohlendioxid']['m3 h'] = new Array() ;
+
+factors['Kohlendioxid']['Nm3'] = new Array() ;
+
+factors['Kohlendioxid']['Nm h'] = new Array() ;
+
+factors['Kohlendioxid']['scf'] = new Array() ;
+
+factors['Kohlendioxid']['t'] = new Array() ;
+
+factors['Kohlendioxid']['tpd'] = new Array() ;
+
+
+factors['Stickstoff'] = new Array() ;
+
+factors['Stickstoff']['gal.'] = new Array() ;
+
+factors['Stickstoff']['kg'] = new Array() ;
+
+factors['Stickstoff']['l'] = new Array() ;
+
+factors['Stickstoff']['lb.'] = new Array() ;
+
+factors['Stickstoff']['l min'] = new Array() ;
+
+factors['Stickstoff']['m3'] = new Array() ;
+
+factors['Stickstoff']['m3 h'] = new Array() ;
+
+factors['Stickstoff']['Nm3'] = new Array() ;
+
+factors['Stickstoff']['Nm h'] = new Array() ;
+
+factors['Stickstoff']['scf'] = new Array() ;
+
+factors['Stickstoff']['t'] = new Array() ;
+
+factors['Stickstoff']['tpd'] = new Array() ;
+
+
+factors['Sauerstoff'] = new Array() ;
+
+factors['Sauerstoff']['gal.'] = new Array() ;
+
+factors['Sauerstoff']['kg'] = new Array() ;
+
+factors['Sauerstoff']['l'] = new Array() ;
+
+factors['Sauerstoff']['lb.'] = new Array() ;
+
+factors['Sauerstoff']['l min'] = new Array() ;
+
+factors['Sauerstoff']['m3'] = new Array() ;
+
+factors['Sauerstoff']['m3 h'] = new Array() ;
+
+factors['Sauerstoff']['Nm3'] = new Array() ;
+
+factors['Sauerstoff']['Nm h'] = new Array() ;
+
+factors['Sauerstoff']['scf'] = new Array() ;
+
+factors['Sauerstoff']['t'] = new Array() ;
+
+factors['Sauerstoff']['tpd'] = new Array() ;
+
+
+factors['Ammoniak'] = new Array() ;
+
+factors['Ammoniak']['gal.'] = new Array() ;
+
+factors['Ammoniak']['kg'] = new Array() ;
+
+factors['Ammoniak']['l'] = new Array() ;
+
+factors['Ammoniak']['lb.'] = new Array() ;
+
+factors['Ammoniak']['l min'] = new Array() ;
+
+factors['Ammoniak']['m3'] = new Array() ;
+
+factors['Ammoniak']['m3 h'] = new Array() ;
+
+factors['Ammoniak']['Nm3'] = new Array() ;
+
+factors['Ammoniak']['Nm h'] = new Array() ;
+
+factors['Ammoniak']['scf'] = new Array() ;
+
+factors['Ammoniak']['t'] = new Array() ;
+
+factors['Ammoniak']['tpd'] = new Array() ;
+
+
+factors['Argon'] = new Array() ;
+
+factors['Argon']['gal.'] = new Array() ;
+
+factors['Argon']['kg'] = new Array() ;
+
+factors['Argon']['l'] = new Array() ;
+
+factors['Argon']['lb.'] = new Array() ;
+
+factors['Argon']['l min'] = new Array() ;
+
+factors['Argon']['m3'] = new Array() ;
+
+factors['Argon']['m3 h'] = new Array() ;
+
+factors['Argon']['Nm3'] = new Array() ;
+
+factors['Argon']['Nm h'] = new Array() ;
+
+factors['Argon']['scf'] = new Array() ;
+
+factors['Argon']['t'] = new Array() ;
+
+factors['Argon']['tpd'] = new Array() ;
+
+
+factors['Chlor'] = new Array() ;
+
+factors['Chlor']['gal.'] = new Array() ;
+
+factors['Chlor']['kg'] = new Array() ;
+
+factors['Chlor']['l'] = new Array() ;
+
+factors['Chlor']['lb.'] = new Array() ;
+
+factors['Chlor']['l min'] = new Array() ;
+
+factors['Chlor']['m3'] = new Array() ;
+
+factors['Chlor']['m3 h'] = new Array() ;
+
+factors['Chlor']['Nm3'] = new Array() ;
+
+factors['Chlor']['Nm h'] = new Array() ;
+
+factors['Chlor']['scf'] = new Array() ;
+
+factors['Chlor']['t'] = new Array() ;
+
+factors['Chlor']['tpd'] = new Array() ;
+
+
+factors['Acetylen'] = new Array() ;
+
+factors['Acetylen']['gal.'] = new Array() ;
+
+factors['Acetylen']['kg'] = new Array() ;
+
+factors['Acetylen']['l'] = new Array() ;
+
+factors['Acetylen']['lb.'] = new Array() ;
+
+factors['Acetylen']['l min'] = new Array() ;
+
+factors['Acetylen']['m3'] = new Array() ;
+
+factors['Acetylen']['m3 h'] = new Array() ;
+
+factors['Acetylen']['Nm3'] = new Array() ;
+
+factors['Acetylen']['Nm h'] = new Array() ;
+
+factors['Acetylen']['scf'] = new Array() ;
+
+factors['Acetylen']['t'] = new Array() ;
+
+factors['Acetylen']['tpd'] = new Array() ;
+
+
+factors['Wasserstoff'] = new Array() ;
+
+factors['Wasserstoff']['gal.'] = new Array() ;
+
+factors['Wasserstoff']['kg'] = new Array() ;
+
+factors['Wasserstoff']['l'] = new Array() ;
+
+factors['Wasserstoff']['lb.'] = new Array() ;
+
+factors['Wasserstoff']['l min'] = new Array() ;
+
+factors['Wasserstoff']['m3'] = new Array() ;
+
+factors['Wasserstoff']['m3 h'] = new Array() ;
+
+factors['Wasserstoff']['Nm3'] = new Array() ;
+
+factors['Wasserstoff']['Nm h'] = new Array() ;
+
+factors['Wasserstoff']['scf'] = new Array() ;
+
+factors['Wasserstoff']['t'] = new Array() ;
+
+factors['Wasserstoff']['tpd'] = new Array() ;
+
+
+
+factors['Chlorwasserstoff']['lb.']['t']=0.0005;
+
+factors['Chlorwasserstoff']['t']['lb.']=2000.0;
+
+factors['Helium']['kg']['kg']=1.0;
+
+factors['Helium']['kg']['l']=8.0;
+
+factors['Helium']['kg']['m3']=5.978;
+
+factors['Helium']['kg']['Nm3']=5.602;
+
+factors['Helium']['l']['kg']=0.125;
+
+factors['Helium']['l']['l']=1.0;
+
+factors['Helium']['l']['lb.']=4.0;
+
+factors['Helium']['l']['m3']=0.749;
+
+factors['Helium']['l']['Nm3']=0.7;
+
+factors['Helium']['lb.']['l']=0.25;
+
+factors['Helium']['lb.']['t']=0.0005;
+
+factors['Helium']['l min']['l min']=1.0;
+
+factors['Helium']['l min']['m3 h']=0.06;
+
+factors['Helium']['l min']['Nm h']=42.0;
+
+factors['Helium']['l min']['tpd']=0.000240963855422;
+
+factors['Helium']['m3']['kg']=0.167280026765;
+
+factors['Helium']['m3']['l']=1.33511348465;
+
+factors['Helium']['m3']['m3']=1.0;
+
+factors['Helium']['m3']['Nm3']=0.937;
+
+factors['Helium']['m3 h']['l min']=16.6666666667;
+
+factors['Helium']['m3 h']['m3 h']=1.0;
+
+factors['Helium']['m3 h']['Nm h']=0.937;
+
+factors['Helium']['m3 h']['tpd']=0.00400801603206;
+
+factors['Helium']['Nm3']['kg']=0.17850767583;
+
+factors['Helium']['Nm3']['l']=1.42857142857;
+
+factors['Helium']['Nm3']['m3']=1.06723585912;
+
+factors['Helium']['Nm3']['Nm3']=1.0;
+
+factors['Helium']['Nm h']['l min']=0.0238095238095;
+
+factors['Helium']['Nm h']['m3 h']=1.06723585912;
+
+factors['Helium']['Nm h']['Nm h']=1.0;
+
+factors['Helium']['Nm h']['tpd']=0.0042841842138;
+
+factors['Helium']['t']['lb.']=2000.0;
+
+factors['Helium']['tpd']['l min']=4150.0;
+
+factors['Helium']['tpd']['m3 h']=249.5;
+
+factors['Helium']['tpd']['Nm h']=233.416667;
+
+factors['Helium']['tpd']['tpd']=1.0;
+
+factors['Kohlendioxid']['kg']['kg']=1.0;
+
+factors['Kohlendioxid']['kg']['l']=0.0;
+
+factors['Kohlendioxid']['kg']['m3']=0.541;
+
+factors['Kohlendioxid']['kg']['Nm3']=0.506;
+
+factors['Kohlendioxid']['l']['l']=1.0;
+
+factors['Kohlendioxid']['l min']['l min']=1.0;
+
+factors['Kohlendioxid']['l min']['m3 h']=0.0;
+
+factors['Kohlendioxid']['l min']['Nm h']=0.0;
+
+factors['Kohlendioxid']['l min']['tpd']=0.00265957446809;
+
+factors['Kohlendioxid']['m3']['kg']=1.84842883549;
+
+factors['Kohlendioxid']['m3']['m3']=1.0;
+
+factors['Kohlendioxid']['m3']['Nm3']=0.934;
+
+factors['Kohlendioxid']['m3 h']['m3 h']=1.0;
+
+factors['Kohlendioxid']['m3 h']['Nm h']=0.934;
+
+factors['Kohlendioxid']['m3 h']['tpd']=0.0443622919862;
+
+factors['Kohlendioxid']['Nm3']['kg']=1.97628458498;
+
+factors['Kohlendioxid']['Nm3']['m3']=1.07066381156;
+
+factors['Kohlendioxid']['Nm3']['Nm3']=1.0;
+
+factors['Kohlendioxid']['Nm h']['m3 h']=1.07066381156;
+
+factors['Kohlendioxid']['Nm h']['Nm h']=1.0;
+
+factors['Kohlendioxid']['Nm h']['tpd']=0.0474308307894;
+
+factors['Kohlendioxid']['tpd']['l min']=376.0;
+
+factors['Kohlendioxid']['tpd']['m3 h']=22.5416667;
+
+factors['Kohlendioxid']['tpd']['Nm h']=21.083333;
+
+factors['Kohlendioxid']['tpd']['tpd']=1.0;
+
+factors['Stickstoff']['gal.']['gal.']=1.0;
+
+factors['Stickstoff']['gal.']['kg']=3.06;
+
+factors['Stickstoff']['gal.']['l']=3.785;
+
+factors['Stickstoff']['gal.']['lb.']=6.745;
+
+factors['Stickstoff']['gal.']['Nm3']=2.447;
+
+factors['Stickstoff']['gal.']['scf']=93.11;
+
+factors['Stickstoff']['kg']['gal.']=0.3262;
+
+factors['Stickstoff']['kg']['kg']=1.0;
+
+factors['Stickstoff']['kg']['l']=1.237;
+
+factors['Stickstoff']['kg']['lb.']=2.205;
+
+factors['Stickstoff']['kg']['m3']=0.855;
+
+factors['Stickstoff']['kg']['Nm3']=0.8;
+
+factors['Stickstoff']['kg']['scf']=30.42;
+
+factors['Stickstoff']['l']['gal.']=0.2642;
+
+factors['Stickstoff']['l']['kg']=0.808407437348;
+
+factors['Stickstoff']['l']['l']=1.0;
+
+factors['Stickstoff']['l']['lb.']=1.782;
+
+factors['Stickstoff']['l']['m3']=0.691;
+
+factors['Stickstoff']['l']['Nm3']=0.647;
+
+factors['Stickstoff']['l']['scf']=24.6;
+
+factors['Stickstoff']['lb.']['gal.']=0.1481;
+
+factors['Stickstoff']['lb.']['kg']=0.4536;
+
+factors['Stickstoff']['lb.']['l']=0.5606;
+
+factors['Stickstoff']['lb.']['lb.']=1.0;
+
+factors['Stickstoff']['lb.']['Nm3']=0.3627;
+
+factors['Stickstoff']['lb.']['scf']=13.803;
+
+factors['Stickstoff']['l min']['l min']=1.0;
+
+factors['Stickstoff']['l min']['m3 h']=0.06;
+
+factors['Stickstoff']['l min']['Nm h']=0.06;
+
+factors['Stickstoff']['l min']['tpd']=0.0016835016835;
+
+factors['Stickstoff']['m3']['kg']=1.16959064327;
+
+factors['Stickstoff']['m3']['l']=1.44717800289;
+
+factors['Stickstoff']['m3']['m3']=1.0;
+
+factors['Stickstoff']['m3']['Nm3']=0.936;
+
+factors['Stickstoff']['m3 h']['l min']=16.6666666667;
+
+factors['Stickstoff']['m3 h']['m3 h']=1.0;
+
+factors['Stickstoff']['m3 h']['Nm h']=0.936;
+
+factors['Stickstoff']['m3 h']['tpd']=0.0280701754386;
+
+factors['Stickstoff']['Nm3']['gal.']=0.408;
+
+factors['Stickstoff']['Nm3']['kg']=1.25;
+
+factors['Stickstoff']['Nm3']['l']=1.5455950541;
+
+factors['Stickstoff']['Nm3']['lb.']=2.757;
+
+factors['Stickstoff']['Nm3']['m3']=1.06837606838;
+
+factors['Stickstoff']['Nm3']['Nm3']=1.0;
+
+factors['Stickstoff']['Nm3']['scf']=38.04;
+
+factors['Stickstoff']['Nm h']['l min']=16.6666666667;
+
+factors['Stickstoff']['Nm h']['m3 h']=1.06837606838;
+
+factors['Stickstoff']['Nm h']['Nm h']=1.0;
+
+factors['Stickstoff']['Nm h']['tpd']=0.03000003;
+
+factors['Stickstoff']['scf']['gal.']=0.01074;
+
+factors['Stickstoff']['scf']['kg']=0.03286;
+
+factors['Stickstoff']['scf']['l']=0.0407;
+
+factors['Stickstoff']['scf']['lb.']=0.07245;
+
+factors['Stickstoff']['scf']['Nm3']=0.02628;
+
+factors['Stickstoff']['scf']['scf']=1.0;
+
+factors['Stickstoff']['tpd']['l min']=594.0;
+
+factors['Stickstoff']['tpd']['m3 h']=35.625;
+
+factors['Stickstoff']['tpd']['Nm h']=33.3333;
+
+factors['Stickstoff']['tpd']['tpd']=1.0;
+
+factors['Sauerstoff']['gal.']['gal.']=1.0;
+
+factors['Sauerstoff']['gal.']['kg']=4.322;
+
+factors['Sauerstoff']['gal.']['l']=3.785;
+
+factors['Sauerstoff']['gal.']['lb.']=9.527;
+
+factors['Sauerstoff']['gal.']['Nm3']=3.025;
+
+factors['Sauerstoff']['gal.']['scf']=115.1;
+
+factors['Sauerstoff']['kg']['gal.']=0.2316;
+
+factors['Sauerstoff']['kg']['kg']=1.0;
+
+factors['Sauerstoff']['kg']['l']=0.876;
+
+factors['Sauerstoff']['kg']['lb.']=2.205;
+
+factors['Sauerstoff']['kg']['m3']=0.748;
+
+factors['Sauerstoff']['kg']['Nm3']=0.7;
+
+factors['Sauerstoff']['kg']['scf']=26.62;
+
+factors['Sauerstoff']['l']['gal.']=0.2642;
+
+factors['Sauerstoff']['l']['kg']=1.14155251142;
+
+factors['Sauerstoff']['l']['l']=1.0;
+
+factors['Sauerstoff']['l']['lb.']=2.517;
+
+factors['Sauerstoff']['l']['m3']=0.853;
+
+factors['Sauerstoff']['l']['Nm3']=0.799;
+
+factors['Sauerstoff']['l']['scf']=30.38;
+
+factors['Sauerstoff']['lb.']['gal.']=0.10496483678;
+
+factors['Sauerstoff']['lb.']['kg']=0.4536;
+
+factors['Sauerstoff']['lb.']['l']=0.3977;
+
+factors['Sauerstoff']['lb.']['lb.']=1.0;
+
+factors['Sauerstoff']['lb.']['Nm3']=0.3174;
+
+factors['Sauerstoff']['lb.']['scf']=12.076;
+
+factors['Sauerstoff']['l min']['l min']=1.0;
+
+factors['Sauerstoff']['l min']['m3 h']=0.06;
+
+factors['Sauerstoff']['l min']['Nm h']=0.06;
+
+factors['Sauerstoff']['l min']['tpd']=0.00192307692308;
+
+factors['Sauerstoff']['m3']['kg']=1.33689839572;
+
+factors['Sauerstoff']['m3']['l']=1.17233294256;
+
+factors['Sauerstoff']['m3']['m3']=1.0;
+
+factors['Sauerstoff']['m3']['Nm3']=0.936;
+
+factors['Sauerstoff']['m3 h']['l min']=16.6666666667;
+
+factors['Sauerstoff']['m3 h']['m3 h']=1.0;
+
+factors['Sauerstoff']['m3 h']['Nm h']=0.936;
+
+factors['Sauerstoff']['m3 h']['tpd']=0.032085561463;
+
+factors['Sauerstoff']['Nm3']['gal.']=0.331;
+
+factors['Sauerstoff']['Nm3']['kg']=1.42857142857;
+
+factors['Sauerstoff']['Nm3']['l']=1.25156445557;
+
+factors['Sauerstoff']['Nm3']['lb.']=3.151;
+
+factors['Sauerstoff']['Nm3']['m3']=1.06837606838;
+
+factors['Sauerstoff']['Nm3']['Nm3']=1.0;
+
+factors['Sauerstoff']['Nm3']['scf']=38.04;
+
+factors['Sauerstoff']['Nm h']['l min']=16.6666666667;
+
+factors['Sauerstoff']['Nm h']['m3 h']=1.06837606838;
+
+factors['Sauerstoff']['Nm h']['Nm h']=1.0;
+
+factors['Sauerstoff']['Nm h']['tpd']=0.0342857142465;
+
+factors['Sauerstoff']['scf']['gal.']=0.008691;
+
+factors['Sauerstoff']['scf']['kg']=0.03756;
+
+factors['Sauerstoff']['scf']['l']=0.0329;
+
+factors['Sauerstoff']['scf']['lb.']=0.08281;
+
+factors['Sauerstoff']['scf']['Nm3']=0.02628;
+
+factors['Sauerstoff']['scf']['scf']=1.0;
+
+factors['Sauerstoff']['tpd']['l min']=520.0;
+
+factors['Sauerstoff']['tpd']['m3 h']=31.1666667;
+
+factors['Sauerstoff']['tpd']['Nm h']=29.1666667;
+
+factors['Sauerstoff']['tpd']['tpd']=1.0;
+
+factors['Ammoniak']['lb.']['t']=0.0005;
+
+factors['Ammoniak']['t']['lb.']=2000.0;
+
+factors['Argon']['gal.']['gal.']=1.0;
+
+factors['Argon']['gal.']['kg']=5.27509627051;
+
+factors['Argon']['gal.']['l']=3.785;
+
+factors['Argon']['gal.']['lb.']=11.63;
+
+factors['Argon']['gal.']['Nm3']=2.957;
+
+factors['Argon']['gal.']['scf']=112.5;
+
+factors['Argon']['kg']['gal.']=0.18957;
+
+factors['Argon']['kg']['kg']=1.0;
+
+factors['Argon']['kg']['l']=0.717;
+
+factors['Argon']['kg']['lb.']=2.205;
+
+factors['Argon']['kg']['m3']=0.599;
+
+factors['Argon']['kg']['Nm3']=0.561;
+
+factors['Argon']['kg']['scf']=21.32;
+
+factors['Argon']['l']['gal.']=0.2642;
+
+factors['Argon']['l']['kg']=1.39470013947;
+
+factors['Argon']['l']['l']=1.0;
+
+factors['Argon']['l']['lb.']=3.072;
+
+factors['Argon']['l']['m3']=0.835;
+
+factors['Argon']['l']['Nm3']=0.781;
+
+factors['Argon']['l']['scf']=29.71;
+
+factors['Argon']['lb.']['gal.']=0.086;
+
+factors['Argon']['lb.']['kg']=0.4536;
+
+factors['Argon']['lb.']['l']=0.3255;
+
+factors['Argon']['lb.']['lb.']=1.0;
+
+factors['Argon']['lb.']['Nm3']=0.2543;
+
+factors['Argon']['lb.']['scf']=9.671;
+
+factors['Argon']['lb.']['t']=0.0005;
+
+factors['Argon']['l min']['l min']=1.0;
+
+factors['Argon']['l min']['m3 h']=0.06;
+
+factors['Argon']['l min']['Nm h']=0.06;
+
+factors['Argon']['l min']['tpd']=0.00240384615385;
+
+factors['Argon']['m3']['kg']=1.6694490818;
+
+factors['Argon']['m3']['l']=1.19760479042;
+
+factors['Argon']['m3']['m3']=1.0;
+
+factors['Argon']['m3']['Nm3']=0.936;
+
+factors['Argon']['m3 h']['l min']=16.6666666667;
+
+factors['Argon']['m3 h']['m3 h']=1.0;
+
+factors['Argon']['m3 h']['Nm h']=0.936;
+
+factors['Argon']['m3 h']['tpd']=0.0400667780168;
+
+factors['Argon']['Nm3']['gal.']=0.3382;
+
+factors['Argon']['Nm3']['kg']=1.7825311943;
+
+factors['Argon']['Nm3']['l']=1.28040973111;
+
+factors['Argon']['Nm3']['lb.']=3.933;
+
+factors['Argon']['Nm3']['m3']=1.06837606838;
+
+factors['Argon']['Nm3']['Nm3']=1.0;
+
+factors['Argon']['Nm3']['scf']=38.04;
+
+factors['Argon']['Nm h']['l min']=16.6666666667;
+
+factors['Argon']['Nm h']['m3 h']=1.06837606838;
+
+factors['Argon']['Nm h']['Nm h']=1.0;
+
+factors['Argon']['Nm h']['tpd']=0.0427807486631;
+
+factors['Argon']['scf']['gal.']=0.008893;
+
+factors['Argon']['scf']['kg']=0.0469;
+
+factors['Argon']['scf']['l']=0.0337;
+
+factors['Argon']['scf']['lb.']=0.1034;
+
+factors['Argon']['scf']['Nm3']=0.02628;
+
+factors['Argon']['scf']['scf']=1.0;
+
+factors['Argon']['t']['lb.']=2000.0;
+
+factors['Argon']['tpd']['l min']=416.0;
+
+factors['Argon']['tpd']['m3 h']=24.9583333;
+
+factors['Argon']['tpd']['Nm h']=23.375;
+
+factors['Argon']['tpd']['tpd']=1.0;
+
+factors['Chlor']['lb.']['t']=0.0005;
+
+factors['Chlor']['t']['lb.']=2000.0;
+
+factors['Acetylen']['lb.']['t']=0.0005;
+
+factors['Acetylen']['t']['lb.']=2000.0;
+
+factors['Wasserstoff']['kg']['kg']=1.0;
+
+factors['Wasserstoff']['kg']['l']=14.126;
+
+factors['Wasserstoff']['kg']['m3']=11.892;
+
+factors['Wasserstoff']['kg']['Nm3']=11.123;
+
+factors['Wasserstoff']['l']['kg']=0.070791448393;
+
+factors['Wasserstoff']['l']['l']=1.0;
+
+factors['Wasserstoff']['l']['m3']=0.842;
+
+factors['Wasserstoff']['l']['Nm3']=0.788;
+
+factors['Wasserstoff']['l min']['l min']=1.0;
+
+factors['Wasserstoff']['l min']['m3 h']=35.08333;
+
+factors['Wasserstoff']['l min']['Nm h']=47.28;
+
+factors['Wasserstoff']['l min']['tpd']=0.000120992135511;
+
+factors['Wasserstoff']['m3']['kg']=0.084090144635;
+
+factors['Wasserstoff']['m3']['l']=1.18764845606;
+
+factors['Wasserstoff']['m3']['m3']=1.0;
+
+factors['Wasserstoff']['m3 h']['l min']=0.0285035656535;
+
+factors['Wasserstoff']['m3 h']['m3 h']=1.0;
+
+factors['Wasserstoff']['m3 h']['Nm h']=0.934;
+
+factors['Wasserstoff']['m3 h']['tpd']=0.00201816347124;
+
+factors['Wasserstoff']['Nm3']['kg']=0.0899038029309;
+
+factors['Wasserstoff']['Nm3']['l']=1.26903553299;
+
+factors['Wasserstoff']['Nm3']['Nm3']=1.0;
+
+factors['Wasserstoff']['Nm h']['l min']=0.0211505922166;
+
+factors['Wasserstoff']['Nm h']['m3 h']=1.07066381156;
+
+factors['Wasserstoff']['Nm h']['Nm h']=1.0;
+
+factors['Wasserstoff']['Nm h']['tpd']=0.00215710948882;
+
+factors['Wasserstoff']['tpd']['l min']=8265.0;
+
+factors['Wasserstoff']['tpd']['m3 h']=495.5;
+
+factors['Wasserstoff']['tpd']['Nm h']=463.58333;
+
+factors['Wasserstoff']['tpd']['tpd']=1.0;
+
+var gas= 0 ;
+var unitfrom = units[1] ;
+var unitto = units[1] ;
+var origin = 1 ;
+var result = 0 ;
+
+var state= navigator.onLine ;
+
+
+</script></body></html>   
