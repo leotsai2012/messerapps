@@ -1,0 +1,7 @@
+{
+    "items": [
+    
+ {name: "Ferroline C8",  href: 'javascript:requestmaterial("0230");', icon: "media/img/light_green.png"},
+    {name: "Ferroline He20 C8",  href: 'javascript:requestmaterial("0208");', icon: "media/img/light_green.png"}
+ ]
+}

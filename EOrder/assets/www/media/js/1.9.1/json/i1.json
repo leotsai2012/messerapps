@@ -1,0 +1,7 @@
+{
+    "items": [
+     {name: "Argon", href: 'javascript:requestmaterial("0101");', icon: "/media/img/green.png"},
+       {name: "Argon Spezial", href: 'javascript:requestmaterial("0102");', icon: "/media/img/green.png"}
+    
+ ]
+}

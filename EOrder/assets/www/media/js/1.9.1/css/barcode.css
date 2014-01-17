@@ -1,0 +1,82 @@
+
+.mblListItemLabel {
+padding-left: 40px;
+}
+
+.title2 {
+  color:  #102F7F;
+  font-size: 13px;
+  font-weight:bold;
+  width: 280px;
+  margin-left:20px;
+  margin-top: 10px;
+  margin-bottom:5px;
+  display:inline-block;
+}
+
+.bigbutton {
+height:40px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+background-color:#102F7F;
+color:#fff;
+}
+
+.bigentry {
+width:100%;
+height:40px;
+margin-left: auto ;
+margin-right: auto; 
+text-align: center;
+background-color:#ccc;
+color:#000;
+}
+
+p.blocktext {
+margin-left: auto ;
+margin-right: auto;
+width:400px; 
+color : #102F7F;
+font-size:18px;
+font-style:bold;
+}
+
+
+.nicebutton {
+
+margin-left: auto;
+margin-right: auto; 
+text-align: center;
+color:#fff ;
+font-weight: bold;
+-moz-border-radius: 6px;
+border-radius: 6px;
+height:40px;
+width: 90% ;
+background-color :#102F7F; 
+
+}
+
+#pd {
+
+font-weight:bold;
+font-size:16px;
+color:#000;
+}
+
+.basketstyle{
+  border : 1px solid black ;
+  width: 100% ;
+  
+}
+
+.mblCheckBox {
+  width: 20px;
+  height:20px;
+  }
+ 
+
+

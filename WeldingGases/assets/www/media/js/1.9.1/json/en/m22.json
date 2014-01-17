@@ -1,0 +1,7 @@
+{
+    "items": [
+ {name: "Ferroline X4", href: 'javascript:requestmaterial("0207");', icon: "media/img/light_green.png"},
+   {name: "Ferroline X8",  href: 'javascript:requestmaterial("0209");', icon: "media/img/light_green.png"}
+
+ ]
+}

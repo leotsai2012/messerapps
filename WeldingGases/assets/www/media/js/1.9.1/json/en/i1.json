@@ -1,0 +1,7 @@
+{
+    "items": [
+     {name: "Argon for welding", href: 'javascript:requestmaterial("0101");', icon: "media/img/green.png"},
+       {name: "Argon 4.8", href: 'javascript:requestmaterial("0102");', icon: "media/img/green.png"}
+    
+ ]
+}

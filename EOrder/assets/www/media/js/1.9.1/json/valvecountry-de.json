@@ -1,0 +1,40 @@
+{
+    "items": [
+        {name: "Albanien",   href: 'javascript:requestcountry("Albania");', icon: "/media/img/icons/flags/png/Albania.png"},
+        {name: "Algerien",    href: 'javascript:requestcountry("Algeria");', icon: "/media/img/icons/flags/png/Algeria.png"},
+        {name: "Oesterreich",   href: 'javascript:requestcountry("Austria");', icon: "/media/img/icons/flags/png/Austria.png"},       
+        {name: "Belgien",    href: 'javascript:requestcountry("Belgium");', icon: "/media/img/icons/flags/png/Belgium.png"},
+        {name: "Bosnien und Herzegowina",    href: 'javascript:requestcountry("Bosnia");', icon: "/media/img/icons/flags/png/Bosnia-Herzegovina.png"},
+        {name: "Bulgarien",    href: 'javascript:requestcountry("Bulgaria");', icon: "/media/img/icons/flags/png/Bulgaria.png"},        
+        {name: "Kroatien",   href: 'javascript:requestcountry("Croatia");', icon: "/media/img/icons/flags/png/Croatia.png"},              
+        {name: "Tschechien",    href: 'javascript:requestcountry("Czech Republic");', icon: "/media/img/icons/flags/png/CzechRepublic.png"},        
+        {name: "Daenemark",    href: 'javascript:requestcountry("Denmark");', icon: "/media/img/icons/flags/png/Denmark.png"},         
+       {name: "Estland",   href: 'javascript:requestcountry("Estonia");', icon: "/media/img/icons/flags/png/Estonia.png"}, 
+        {name: "Frankreich",    href: 'javascript:requestcountry("France");', icon: "/media/img/icons/flags/png/France.png"},       
+        {name: "Deutschland",   href: 'javascript:requestcountry("Germany");', icon: "/media/img/icons/flags/png/Germany.png"},
+        {name: "Ungarn",    href: 'javascript:requestcountry("Hungary");', icon: "/media/img/icons/flags/png/Hungary.png"},  
+         {name: "Italien",    href: 'javascript:requestcountry("Italy");', icon: "/media/img/icons/flags/png/Italy.png"},  
+         {name: "Russland",    href: 'javascript:requestcountry("Russia");', icon: "/media/img/icons/flags/png/Russia.png"},
+          {name: "Lettland",   href: 'javascript:requestcountry("Latvia");', icon: "/media/img/icons/flags/png/Latvia.png"},  
+        {name: "Litauen",    href: 'javascript:requestcountry("Lithuenia");', icon: "/media/img/icons/flags/png/Lithuania.png"},            
+         {name: "Makedonien",   href: 'javascript:requestcountry("Macedonia");', icon: "/media/img/icons/flags/png/Macedonia.png"}, 
+      {name: "Montenegro",    href: 'javascript:requestcountry("Montenegro");', icon: "/media/img/icons/flags/png/Montenegro.png"}, 
+         {name: "Niederlande",   href: 'javascript:requestcountry("Netherlands");', icon: "/media/img/icons/flags/png/Netherlands.png"}, 
+       {name: "Neuseeland",    href: 'javascript:requestcountry("New Zealand");', icon: "/media/img/icons/flags/png/NewZealand.png"},
+        {name: "China",    href: 'javascript:requestcountry("China");', icon: "/media/img/icons/flags/png/PeoplesRepublicofChina.png"}, 
+        {name: "Peru",    href: 'javascript:requestcountry("Peru");', icon: "/media/img/icons/flags/png/Peru.png"},              
+        {name: "Polen",    href: 'javascript:requestcountry("Poland");', icon: "/media/img/icons/flags/png/Poland.png"},       
+        {name: "Portugal",    href: 'javascript:requestcountry("Portugal");', icon: "/media/img/icons/flags/png/Portugal.png"}, 
+         {name: "Rumenien",   href: 'javascript:requestcountry("Rumenia");', icon: "/media/img/icons/flags/png/Romania.png"},
+         {name: "Serbien",    href: 'javascript:requestcountry("Serbbia");', icon: "/media/img/icons/flags/png/Serbia.png"},         
+         {name: "Slovakei",    href: 'javascript:requestcountry("Slovakia");', icon: "/media/img/icons/flags/png/Slovakia.png"},         
+         {name: "Slovenien",    href: 'javascript:requestcountry("Slovenia");', icon: "/media/img/icons/flags/png/Slovenia.png"},         
+         {name: "Spanien",    href: 'javascript:requestcountry("Spain");', icon: "/media/img/icons/flags/png/Spain.png"},  
+         {name: "Schweiz",    href: 'javascript:requestcountry("Switzerland");', icon: "/media/img/icons/flags/png/Switzerland.png"},          
+         {name: "Turkei",   href: 'javascript:requestcountry("Turkey");', icon: "/media/img/icons/flags/png/Turkey.png"},  
+         {name: "Ukraine",   href: 'javascript:requestcountry("Ukraine");', icon: "/media/img/icons/flags/png/Ukraine.png"},          
+         {name: "Vietnam",    href: 'javascript:requestcountry("Vietnam");', icon: "/media/img/icons/flags/png/Vietnam.png"}                                                                                                    
+    ]
+}
+
+
