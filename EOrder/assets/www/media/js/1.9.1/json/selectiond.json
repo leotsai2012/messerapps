@@ -1,6 +1,0 @@
-{
-    "items": [
- {name: "Produktnamen",  moveTo: "name"},
- {name: "EN ISO 14175:2008",  moveTo: "iso"}               
- ]
-}

@@ -1,8 +1,0 @@
-{
-    "items": [
-    {name: "Ferroline C6 X1",  href: 'javascript:requestmaterial("0212");', icon: "/media/img/light_green.png"},
- {name: "Inoxline C12X2",  href: 'javascript:requestmaterial("0214");', icon: "/media/img/light_green.png"}
-
- 
- ]
-}

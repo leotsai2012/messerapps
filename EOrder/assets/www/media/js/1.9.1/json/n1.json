@@ -1,6 +1,0 @@
-{
-    "items": [
-    {name: "Stickstoff", href: 'javascript:requestmaterial("0060");', icon: "/media/img/black.png"}
-
- ]
-}

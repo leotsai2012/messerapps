@@ -1,8 +1,0 @@
-{
-    "items": [
-   {name: "Inoxline H2",  href: 'javascript:requestmaterial("0352");', icon: "/media/img/light_green.png"},
-   {name: "Inoxline H5", href: 'javascript:requestmaterial("0353");', icon: "/media/img/light_green.png"},
-   {name: "Inoxline H7", href: 'javascript:requestmaterial("0354");', icon: "/media/img/light_green.png"},
-      {name: "Inoxline He3 H1",  href: 'javascript:requestmaterial("0358");', icon: "/media/img/light_green.png"},
- ]
-}
