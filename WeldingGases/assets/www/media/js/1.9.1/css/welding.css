@@ -1,0 +1,86 @@
+@CHARSET "UTF-8";
+
+.mblListItem {
+margin-left: 10px;
+}
+
+
+.mblListItemLabel {
+padding-left: 50px;
+}
+
+.mblListItemIcon {
+width: 40px;
+height: 40px;
+left: 0px;
+}
+
+.bigentry {
+width:100%;
+height:40px;
+margin-left: auto ;
+margin-right: auto; 
+text-align: center;
+background-color:#ccc;
+color:#000;
+}
+
+.title2 {
+  color:  #102F7F;
+  font-size: 13px;
+  font-weight:bold;
+  width: 280px;
+  margin-left:20px;
+  margin-top: 10px;
+  margin-bottom:5px;
+  display:inline-block;
+}
+
+.bigbutton {
+width:60%;
+height:40px;
+margin: 10px auto 10px auto; 
+text-align: center;
+background-color:#ccc;
+color:#000;
+}
+
+.nicebutton {
+
+margin: 10px auto 10px auto; 
+text-align: center;
+color:#fff
+-moz-border-radius: 6px;
+border-radius: 6px;
+height:40px;
+
+}
+
+#pd {
+
+font-weight:bold;
+font-size:16px;
+color:#000;
+}
+
+.basketstyle{
+  border : 1px solid black ;
+  width: 100% ;
+  
+}
+
+
+
+.conversionbutton {
+height: 24px;
+width: 150px;
+font-size: 14px;
+border-radius:8px;
+}
+
+.mblButton {
+border-radius:8px;
+}
+
+#application {
+  margin-left:10px; }

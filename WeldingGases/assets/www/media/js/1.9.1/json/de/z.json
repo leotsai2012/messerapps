@@ -1,0 +1,15 @@
+{
+    "items": [
+
+    {name: "Inoxline He30 H2 C",  href: 'javascript:requestmaterial("0367");', icon: "media/img/light_green.png"},
+   {name: "Inoxline He15 H2 N",  href: 'javascript:requestmaterial("0368");', icon: "media/img/light_green.png"},
+     {name: "Aluline N",  href: 'javascript:requestmaterial("0180");', icon: "media/img/light_green.png"},
+    {name: "Aluline He15 N",  href: 'javascript:requestmaterial("0171");', icon: "media/img/light_green.png"},
+    {name: "Aluline He30 N",  href: 'javascript:requestmaterial("0172");', icon: "media/img/light_green.png"},
+     {name: "Aluline He50 N",  href: 'javascript:requestmaterial("0173");', icon: "media/img/light_green.png"},
+     {name: "Aluline He70 N",  href: 'javascript:requestmaterial("0175");', icon: "media/img/light_green.png"}
+
+ 
+         
+ ]
+}

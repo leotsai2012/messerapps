@@ -1,0 +1,6 @@
+{
+    "items": [
+ {name: "Inoxline N2",  href: 'javascript:requestmaterial("0368");', icon: "media/img/light_green.png"}
+
+ ]
+}

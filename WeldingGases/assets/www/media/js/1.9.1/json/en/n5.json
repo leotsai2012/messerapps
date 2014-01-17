@@ -1,0 +1,11 @@
+{
+    "items": [
+      {name: "Forming gas H2", href: 'javascript:requestmaterial("0429");', icon: "media/img/red.png"},
+     {name: "Forming gas H5", href: 'javascript:requestmaterial("0426");', icon: "media/img/red.png"},
+   {name: "Forming gas H8",  href: 'javascript:requestmaterial("0427");', icon: "media/img/red.png"},
+     {name: "Forming gas H10", href: 'javascript:requestmaterial("0421");', icon: "media/img/red.png"},
+  {name: "Forming gas H12",  href: 'javascript:requestmaterial("0428");', icon: "media/img/red.png"}, 
+   {name: "Forming gas H25",  href: 'javascript:requestmaterial("0425");', icon: "media/img/red.png"}
+
+ ]
+}

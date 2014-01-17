@@ -1,0 +1,22 @@
+{
+    "items": [
+ {name: "C1",  moveTo: "c1"},
+ {name: "I1",  moveTo: "i1"},
+ {name: "I2",  moveTo: "i2"}, 
+ {name: "I3",  moveTo: "i3"},  
+  {name: "M12",  moveTo: "m12"},
+  {name: "M13",  moveTo: "m13"},
+   {name: "M14",  moveTo: "m14"},
+  {name: "M20",  moveTo: "m20"}, 
+  {name: "M21",  moveTo: "m21"}, 
+   {name: "M22",  moveTo: "m22"}, 
+   {name: "M23",  moveTo: "m23"},    
+   {name: "M24",  moveTo: "m24"},
+    {name: "N1",  moveTo: "n1"},    
+    {name: "N2",  moveTo: "n2"},        
+   {name: "N5",  moveTo: "n5"}, 
+   {name: "R1",  moveTo: "r1"}, 
+   {name: "Z",  moveTo: "z"}     
+                 
+ ]
+}
