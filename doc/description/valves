@@ -1,0 +1,16 @@
+1. Description
+
+Industrial gas valves are gas- and country specific: find out which valve is utilised in which country for which gas. It will help you to avoid a situation where you have to find out that the pressure regulator is not adapted to the industrial gas cylinders that are provided in the project country.
+
+The valve types are stored in an on-line database and we invite everybody to complement this database with country-specific information of countries where the Messer Group is not present.
+
+2. Technology
+
+The app is written in HTML based on the dojo toolkit mobile framework. It is tested  on Gecko based browsers. 
+
+
+3. Demo site
+
+The demo site is at http://h2217974.stratoserver.net/mobile/valves/en, alt. http://h2217974.stratoserver.net/mobile/valves/de . Depending on the language settings of your browser a different language version is shown
+
+
