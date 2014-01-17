@@ -24,7 +24,8 @@
         <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
     </feature>
     <access origin="http://127.0.0.1*" />
-    <access origin="http://show-how.info*" />    
+    <access origin="http://show-how.info*" />  
+        <access origin="http://h2217974.stratoserver.net*" />    
     <preference name="useBrowserHistory" value="true" />
     <preference name="exit-on-suspend" value="false" />
     <preference name="permissions" value="none" />
