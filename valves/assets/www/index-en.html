@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+
+
+
+
+<head>
+
+
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+
+
+
+
+<link rel="stylesheet" href="media/js/1.9.1/dijit/themes/claro/claro.css" />
+
+
+<link rel="stylesheet"  href="media/js/1.9.1/css/android.css" />
+
+<link rel="stylesheet"  href="media/js/1.9.1/css/base.css" />
+
+
+
+
+<link rel="stylesheet"  href="media/js/1.9.1/css/valves.css" />
+
+
+
+
+       
+<title></title>
+    
+</head>
+
+<body class="claro">
+  
+  <div id="titlepage" class="fullscreen">
+    <p class="centered">
+      <img src="media/img/messerstart.png" />
+      </p>
+</div>
+
+
+
+
+
+<div id="home" dojoType="dojox.mobile.View" >
+<div class="full" dojoType="dojox.mobile.RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+</div>
+  <h1 dojoType="dojox.mobile.Heading"  label='&nbsp;Introduction''  class="correctmargin">
+   <div dojoType="dojox.mobile.ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div>
+  
+  </h1>
+    <div dojoType="dojox.mobile.RoundRect">
+    
+
+
+
+With the avent of 300 bar technology, the cylinder valves for many product were harmonized and it is possible to utilise the same pressure regulators throughout Europe. For  traditional lower pressure cylinders however the valve connexions remain subject to national standards and  the pressure regulating equipment should have the right connexion type.. <br /><br />
+
+This app gives you an overview of the various threads for   major industrial gases and many countries where the Messer Group has cylinder filling operations. <br /><br />
+
+If your country is not present in the list, feel free to submit the national standard to the app developer. We will gladly integrate the data in order to provide the most complete information to all interested parties.
+
+
+
+
+
+
+
+    </div>
+  <div dojoType="dojox.mobile.RoundRect">
+<ul dojoType=""dojox.mobile.EdgeToEdgeList">
+<li dojoType="dojox.mobile.ListItem" moveTo="countrysel">Select by country</li>
+<li dojoType="dojox.mobile.ListItem" moveTo="productsel">Select by product</li>
+</ul>
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div data-dojo-type="dojo.data.ItemFileReadStore"
+            data-dojo-id="sampleStore" data-dojo-props='url:"media/js/1.9.1/json/valveproducts1.json"'></div>
+           
+            
+<div  dojoType="dojox.mobile.View"  id="productsel" >
+<div class="full" dojoType="dojox.mobile.RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+
+</div>
+  <h1 dojoType="dojox.mobile.Heading" label='&nbsp;Select the product'  >
+  <div dojoType="dojox.mobile.ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div>
+ <div dojoType="dojox.mobile.ToolBarButton" moveTo="help" icon="media/img/info.png" style="float:right;" ></div>	
+     <div dojoType="dojox.mobile.ToolBarButton" moveTo="home" icon="media/img/back.png" style="float:right;" ></div>		
+  
+  </h1>
+    <div dojoType="dojox.mobile.ScrollableView">
+  <div dojoType="dojox.mobile.RoundRect">
+
+<ul data-dojo-type="dojox.mobile.EdgeToEdgeDataList"
+            data-dojo-props='store:sampleStore, itemMap:{name:"label", count:"rightText"}'>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+<div data-dojo-type="dojo.data.ItemFileReadStore"
+            data-dojo-id="countryStore" data-dojo-props='url:"media/js/1.9.1/json/valvecountry-en.json"'></div>
+           
+            
+<div  dojoType="dojox.mobile.View"  id="countrysel" >
+<div class="full" dojoType="dojox.mobile.RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+
+</div>
+  <h1 dojoType="dojox.mobile.Heading" label='&nbsp;Select your country'  >
+  <div dojoType="dojox.mobile.ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div>
+  <div dojoType="dojox.mobile.ToolBarButton" moveTo="home" icon="media/img/back.png" style="float:right;" ></div>	
+  </h1>
+    <div dojoType="dojox.mobile.ScrollableView">
+  <div dojoType="dojox.mobile.RoundRect">
+
+<ul data-dojo-type="dojox.mobile.EdgeToEdgeDataList"
+            data-dojo-props='store:countryStore, itemMap:{name:"label", count:"rightText"}'>
+</ul>
+</div>
+</div>
+</div>
+
+<div  dojoType="dojox.mobile.View"  id="valve" >
+<div class="full" dojoType="dojox.mobile.RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+
+</div>
+  <h1 dojoType="dojox.mobile.Heading" label='&nbsp;Valve information'  >
+  <div dojoType="dojox.mobile.ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div>
+  <div dojoType="dojox.mobile.ToolBarButton" moveTo="help" icon="media/img/info.png" style="float:right;" ></div>		
+    <div dojoType="dojox.mobile.ToolBarButton" moveTo="productsel" icon="media/img/back.png" style="float:right;" ></div>		
+  
+  </h1>
+  <div  dojoType="dojox.mobile.RoundRect">
+  <span id="gasinfo" style="font-weight:bold;"></span>
+  </div>
+    <div dojoType="dojox.mobile.ScrollableView">
+  <div dojoType="dojox.mobile.RoundRect" id="valveinput">
+
+
+</div>
+</div>
+</div>
+
+<div  dojoType="dojox.mobile.View"  id="country" >
+<div class="full" dojoType="dojox.mobile.RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+
+</div>
+  <h1 dojoType="dojox.mobile.Heading" label='&nbsp;Valve information'  >
+  <div dojoType="dojox.mobile.ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div>
+  <div dojoType="dojox.mobile.ToolBarButton" moveTo="help" icon="media/img/info.png" style="float:right;" ></div>		
+    <div dojoType="dojox.mobile.ToolBarButton" moveTo="countrysel" icon="media/img/back.png" style="float:right;" ></div>		
+  
+  </h1>
+  <div  dojoType="dojox.mobile.RoundRect">
+  <span id="countryinfo" style="font-weight:bold;"></span>
+  </div>
+    <div dojoType="dojox.mobile.ScrollableView">
+  <div dojoType="dojox.mobile.RoundRect" id="countryinput">
+
+
+</div>
+</div>
+</div>
+ 
+<div id="help" dojoType="dojox.mobile.View" >
+<div class="full" dojoType="dojox.mobile.RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+
+</div>
+  <h1 dojoType="dojox.mobile.Heading"  label='info'  class="correctmargin">
+   <div dojoType="dojox.mobile.ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div>
+<div dojoType="dojox.mobile.ToolBarButton" moveTo="home" icon="media/img/back.png" style="float:right;" ></div>	
+
+  </h1>
+
+  <div  dojoType="dojox.mobile.ScrollableView" >
+     <div dojoType="dojox.mobile.RoundRect" >
+<ul dojoType=""dojox.mobile.EdgeToEdgeList">
+<li dojoType="dojox.mobile.ListItem" moveTo="markings">Valve history</li>
+
+
+</ul>
+</div>
+</div>
+</div>
+    
+<div id="markings" dojoType="dojox.mobile.View" >
+<div class="full" dojoType="dojox.mobile.RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+
+</div>
+  <h1 dojoType="dojox.mobile.Heading"  label='Valve information'  class="correctmargin">
+ <div dojoType="dojox.mobile.ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div>
+<div dojoType="dojox.mobile.ToolBarButton" moveTo="help" icon="media/img/info.png" style="float:right;" ></div>		
+
+  </h1>
+
+  <div  dojoType="dojox.mobile.ScrollableView" >
+    <div dojoType="dojox.mobile.RoundRect"  >
+
+
+
+
+The objective of the app is to summarize the different valve threads of the main gases for many countries in the world. You can help by submitting the national standard where the Messer Group is not present into the database. We will check and complete our on-line database. Thanks to this on-line database updates are immediately available to all app-users and do require a tedious app-upgrade.<br /><br />
+Please send your submissions or error reporting  to marc.dierckx@messergroup.com
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+      <div id="message_generic" data-dojo-type="dojox/mobile/Overlay" >
+  <h1 data-dojo-type="dojox/mobile/Heading"  >
+   <div  style="float:right;margin-right:40px;" data-dojo-type="dojox/mobile/ToolBarButton" onclick="hidepopup('message_generic')" icon="media/img/back.png" ></div>
+  
+  </h1>
+   <p class="centeredmessage" id="generic_text" ></p>
+    </div>
+    
+  <div id="message_contact" data-dojo-type="dojox/mobile/Overlay" >
+  <h1 data-dojo-type="dojox/mobile/Heading"  >
+   <div  style="float:right;margin-right:40px;" data-dojo-type="dojox/mobile/ToolBarButton" onclick="hidepopup('message_contact')" icon="media/img/back.png" ></div>
+  
+  </h1>
+   <p class="centeredmessage" >No valid E-mail provided!</p>
+    </div>
+  
+<div id="message_ie" data-dojo-type="dojox/mobile/Overlay" >
+  <h1 data-dojo-type="dojox/mobile/Heading"  >
+   <div  style="float:right;margin-right:40px;" data-dojo-type="dojox/mobile/ToolBarButton" onclick="hidepopup('message_ie')" icon="media/img/back.png" ></div>
+  
+  </h1>
+   <p class="centeredmessage" >We do not support IE < version 9!</p>
+    </div>
+
+ 
+
+<div class="transparentscreen" id="spinner" data-dojo-type="dojox/mobile/Overlay"  >
+
+ <p class="centered2"> <img src="media/img/ajax-loader.gif" /></p>
+
+</div>
+
+
+<div id="legal" data-dojo-type="dojox/mobile/View" >
+<div class="full" data-dojo-type="dojox/mobile/RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+</div>
+  <h1 data-dojo-type="dojox/mobile/Heading"  data-dojo-props="label:'&nbsp;More'"  class="correctmargin">
+   <div  style="float:right;margin-right:40px;" data-dojo-type="dojox/mobile/ToolBarButton" moveTo="home" icon="media/img/back.png" ></div>
+  
+  </h1>
+  <div data-dojo-type="dojox/mobile/RoundRect">
+<ul data-dojo-type=""dojox/mobile/EdgeToEdgeList">
+<li data-dojo-type="dojox/mobile/ListItem" moveTo="liability">Disclaimer</li>
+<li data-dojo-type="dojox/mobile/ListItem" moveTo="privacy">Privacy policy</li>
+<li data-dojo-type="dojox/mobile/ListItem" moveTo="contact">Contact</li>
+<li data-dojo-type="dojox/mobile/ListItem" moveTo="sitemap">About Messer</li>
+<li data-dojo-type="dojox/mobile/ListItem" moveTo="impressum">Imprint</li>
+</ul>
+</div>
+
+
+</div>
+
+
+
+
+<div id="copyright" data-dojo-type="dojox/mobile/View" >
+<div class="full" data-dojo-type="dojox/mobile/RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+</div>
+  <h1 data-dojo-type="dojox/mobile/Heading" label="&nbsp;Imprint" >
+  <div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div>
+  
+  </h1>
+    <div  data-dojo-type="dojox/mobile/ScrollableView" >
+  <div data-dojo-type="dojox/mobile/RoundRect">
+
+
+  
+
+
+
+<b>Messer Group Internet Forum</b><br /><br />
+All information concerning our Internet offer is carefully reviewed.
+Our aim is to extend and update this information on a regular basis. However, we do not provide any guarantee for the completeness, correctness or validity of the information.<br />
+Publisher:<br /><br />
+Messer Group GmbH<br />
+Authorized representatives:<br />
+Stefan Messer and<br>
+Dr. Hans-Gerd Wienands<br />
+Messer Group GmbH<br />
+Messer-Platz 1<br />
+65812 Bad Soden<br />
+Phone: +49 6196 7760-0<br />
+Fax: +49 6196 7760-442<br />
+info@messergroup.com<br />
+District court: Frankfurt HR B 73307<br />
+VAT-Ident-Number: DE 813944858<br />
+Responsible party:<br /><br />
+Messer Group GmbH<br />
+senior manager e-sales<br />
+Marc Dierckx<br />
+Messer Group GmbH<br />
+Gahlingspfad 31<br />
+47803 Krefeld<br />
+Phone: +49 2151 7811-0
+51<br />
+Fax: +49 2151 7811-598<br />
+marc.dierckx@messergroup.com<br /><br />
+
+Copyright<sup>©</sup> 2012 Messer Group GmbH. All rights reserved.
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+<div id="contact" data-dojo-type="dojox/mobile/View" >
+<div class="full" data-dojo-type="dojox/mobile/RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div></div>
+  <h1 data-dojo-type="dojox/mobile/Heading" label="&nbsp;Contact"   class="correctmargin">
+  <div data-dojo-type="dojox/mobile/ToolBarButton" moveTo=legal icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div>
+  
+  </h1>
+    <div  data-dojo-type="dojox/mobile/ScrollableView" >
+  <div data-dojo-type="dojox/mobile/RoundRect">
+<form method="post" action="javascript:submitcontact()">
+<p type="font-size:10px;"   class="detail"> (*) fields are compulsary</p>
+<table><tr><td>
+Name(*)</td><td>
+<input data-dojo-type="dojox/mobile/TextBox" id="id_name" type="text" name="name" />
+</td></tr><tr><td>
+Phone(*)</td><td>
+<input data-dojo-type="dojox/mobile/TextBox"id="id_tel" type="text" name="tel" />
+</td></tr><tr><td>
+E-mail (*)</td><td>
+<input data-dojo-type="dojox/mobile/TextBox"  id="id_sender" type="text" name="sender" />
+</td></tr><tr><td>
+Subject</td><td>
+<input data-dojo-type="dojox/mobile/TextBox"  id="id_subject" type="text" name="subject" />
+</td></tr><tr><td>
+Contents</td><td>
+<textarea data-dojo-type="dojox/mobile/TextArea"  id="id_contents" name="contents" cols="21" rows="10"></textarea>
+</td></tr>
+</table>
+<p id="response"></p>
+ <button data-dojo-type="dojox/mobile/Button" type="submit" >Submit</button>
+</form>
+</div>
+</div>
+</div>
+
+<div id="privacy" data-dojo-type="dojox/mobile/View" >
+<div class="full" data-dojo-type="dojox/mobile/RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+</div>
+  <h1 data-dojo-type="dojox/mobile/Heading" label="&nbsp;Privacy policy"  >
+  <div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png"style="float:right;margin-right:40px;" ></div>
+  
+  </h1>
+    <div  data-dojo-type="dojox/mobile/ScrollableView" >
+  <div data-dojo-type="dojox/mobile/RoundRect">
+       
+
+
+
+<b>Collection of personal data</b> <br />
+When you visit these web pages, our web server stores information. Your IP address, which is assigned to you by your service provider, shows us the website from which you access our pages, which pages of the Messer Group you visit, and the duration and date of your visit.
+Personal data is stored only if such data is entered, for example, via contact or application forms, or as part of survey questionnaires or competitions.<br /><br />
+<b>Use and forwarding of personal data</b><br />
+Messer uses your personal data for the technical administration and enhancement of web pages or to process your interests / queries. Your data will not be passed on to third parties outside the Messer Group.<br /><br />
+<b>Webcontrolling and cookies</b><br />
+This website uses etracker technology (www.etracker.de) to collect visitor behavior data. The data is collected anonymously to be used for marketing and optimization purposes. All visitor data is saved using an anonymous user ID to aggregate a usage profile. Cookies may be used for this purpose. Cookies are small text files that are stored in the visitor’s local browser cache. Using such cookies it is possible to recognize the visitor’s browser. The data collected via etracker technology will not be used to determine the personal identity of the website visitor or compiled with personal data pertaining to the user of the pseudonym unless agreed to separately by the person concerned. The collection and storage of data may be revoked at any time with respect to subsequent services.<br /><br />
+<b>Data security</b><br />
+We have implemented measures to protect your data. We take care to maintain security measures that correspond to the latest state of technological development.
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+<div id="liability" data-dojo-type="dojox/mobile/View" >
+<div class="full" data-dojo-type="dojox/mobile/RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+</div>
+  <h1 data-dojo-type="dojox/mobile/Heading" label="&nbsp;Disclaimer" >
+  <div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div>
+  
+  </h1>
+    <div  data-dojo-type="dojox/mobile/ScrollableView" >
+  <div data-dojo-type="dojox/mobile/RoundRect">
+     
+
+
+
+<b>Responsibility for content</b><br />
+The content of our website was developed and compiled by us with great care. We accept no liability for the accuracy, completeness or quality of the content.<br />
+As a service provider, we are responsible for our own content on this site in accordance with § 7 Section 1 German Telemedia Act (Telemediengesetz) and laws of general application. In accordance with §§ 8 to 10 German Telemedia Act we are not obliged however, as a service provider, to monitor relayed or stored third party information, or to probe such information for circumstances that indicate illegal activity. Obligations to remove or block the use of information in accordance with laws of general application are not affected by this. Liability in this regard is only possible from the moment of becoming aware of a specific breach of law. We will immediately remove such content immediately upon becoming aware of corresponding breaches of the law.<br /><br />
+<b>Links </b><br />
+Our website contains links to external third party websites, the content of which are outside our control. We are not responsible for the content of linked sites and we do not represent these as our own. Liability for third party content is therefore excluded. The respective provider or operator of a linked site is at all times responsible for the content of linked sites. The linked sites were, however, free from illegal content at the time of linking. Without concrete evidence of any wrongdoing, it is unreasonable to undertake permanent monitoring of the content of linked sites. If any breaches of law do emerge, we will remove such links immediately.<br /><br />
+<b>Copyright</b><br />
+The electronic databases, texts, images, graphics, layout and other content of this website are protected by copyright law. Third party contributions are designated as such. The reproduction, distribution, editing or other use that is not expressly allowed by copyright law or other laws requires our consent in writing. This also applies to the content of this website that is placed on third party websites or reproduced in any other way. Making downloads from and copies of this site are only permitted for non-commercial use. The operators of the site endeavour always to respect the copyright of other parties and/or to use work that it has produced itself or that is freeware.<br /><br />
+<b>Copyright of press photos </b><br />
+The Messer press photos that are available to download on our internet site may only be used for journalistic uses in conjunction with editorial or scientific reporting. The copyright for such images remains fully with Messer. Images that are used, altered, distributed and/or electronically processed for the purposes specified above must contain source specification . Commercial provision to third parties – in any form – is not permitted. The use of press photos is free of charge. In return, we would request that you to send us a specimen copy of print media and a brief notification in the case of film and electronic media. 
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+<div id="sitemap" data-dojo-type="dojox/mobile/View" >
+<div class="full" data-dojo-type="dojox/mobile/RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+</div>
+  <h1 data-dojo-type="dojox/mobile/Heading" label="&nbsp;About Messer"  >
+  <div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div>
+  
+  </h1>
+    <div  data-dojo-type="dojox/mobile/ScrollableView" >
+  <div data-dojo-type="dojox/mobile/RoundRect">
+        
+
+
+
+Messer is the largest privately managed industrial gases specialist and is active in more than 30 countries in Europe and Asia, as well as Peru, Algeria and New Zealand, with a total of over 60 operating companies. Its international activities are managed from Frankfurt am Main, whilst management of core technical functions – logistics, engineering, production and applications engineering – is undertaken from Krefeld. In 2012, 5,364 employees generated consolidated sales of € 1,088 billion.<br /><br />
+
+From acetylene to xenon, the Messer Group has one of the most diverse product portfolios on the market - it produces industrial gases such as oxygen, nitrogen, argon, carbon dioxide, hydrogen, helium, shielding gases for welding, specialty gases, medical gases and many different gas mixtures.
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+<div id="impressum" data-dojo-type="dojox/mobile/View" >
+<div class="full" data-dojo-type="dojox/mobile/RoundRect"  >
+<div  class="messerlogo"  ><img class="siteimage" src="media/img/messer.png" /></div>
+<div class="sitelogo"  ><img class="siteimage" src="media/img/valvesicon.png" /></div>
+</div>
+  <h1 data-dojo-type="dojox/mobile/Heading" label="&nbsp;Imprint"  >
+  <div data-dojo-type="dojox/mobile/ToolBarButton" moveTo="legal" icon="media/img/ic_action_overflow.png" style="float:right;margin-right:40px;" ></div>
+  
+  </h1>
+    <div  data-dojo-type="dojox/mobile/ScrollableView" >
+  <div data-dojo-type="dojox/mobile/RoundRect">
+    
+
+
+
+All information concerning our Internet offer is carefully reviewed. Our aim is to extend and update this information on a regular basis. However, we do not provide any guarantee for the completeness, correctness or validity of the information.<br /><br />
+
+ 
+
+<b>Publisher:</b><br />
+Messer Group GmbH<br /><br />
+
+ 
+
+<b>Authorized representatives:</b><br />
+Stefan Messer and Dr. Hans-Gerd Wienands<br /><br />
+
+Messer Group GmbH<br />
+Messer-Platz 1<br />
+65812 Bad Soden<br />
+Phone: +49 6196 7760-0<br />
+Fax: +49 6196 7760-442<br /><br />
+
+info@messergroup.com<br /><br />
+
+District court: Frankfurt HR B 73307<br />
+VAT-Ident-Number: DE 813944858<br /><br /><br />
+
+ 
+
+<b>Responsible party:</b><br />
+Messer Group GmbH<br />
+Senior Manager e-Sales<br />
+Marc Dierckx<br /><br />
+
+Messer Group GmbH<br />
+Gahlingspfad 31<br />
+47803 Krefeld<br /><br />
+
+Phone: +49 2151 7811-0<br />
+Fax: +49 2151 7811-598<br />
+marc.dierckx@messergroup.com<br /><br /><br />
+
+ 
+Copyright © 2013 Messer Group GmbH. All rights reserved.
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+<script  data-dojo-config="async:false,parseOnLoad:true" src="media/js/1.9.1/dojo/dojo.js"  ></script>
+<script type="text/javascript" src="media/android/en/jsi18n.js"></script>
+
+<script  type="text/javascript" src="media/js/1.9.1/app/base.js"  ></script>
+
+
+
+
+
+<script src="media/js/1.9.1/app/valve.js"  ></script>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
