@@ -177,9 +177,10 @@ function checkinternet(){
           		showpopup('message_internet'); }) }) };
 
 
-function locate(callback) {
+var locate = function(callback) {
 	
-  
+	alert("herer");
+
   require([ "dojo/request/xhr"], function(xhr){
 
 if (navigator.geolocation) 
@@ -189,6 +190,7 @@ if (navigator.geolocation)
     function (position) {  
           lat = position.coords.latitude ;
           longi = position.coords.longitude ; 
+          alert(lat); alert(longi);
           
       	xhr("http://show-how.info/liferay/requestaddress/",
       		    { timeout: 10000,

@@ -233,6 +233,7 @@ p { margin-top:0px; }
 
 
 .mblView {
+  position : fixed ;
   background-color : #e9edf6;
 }
 
@@ -251,7 +252,6 @@ font-size: 12px;
 
 .mblHeading {
 
-padding-left: 20px;
 text-align: left;
 }
 
@@ -334,4 +334,8 @@ margin-top:-40px;
 font-size:12px;
 font-wheight:bold;
 
+}
+
+.mblScrollableView {
+	position: relative ;
 }

@@ -4,6 +4,13 @@ body {
   font-family:Arial;
 }
 
+li {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 10px;
+}
+
  div.fullscreen{
     display:block;
     position:absolute;
@@ -197,7 +204,7 @@ table.productselection {
   float: right;
   background-image: none;
   background-color: transparent;
-  height:100%;
+  height:70%;
   margin-top:0px;
 
 }
@@ -205,12 +212,12 @@ table.productselection {
 .sitelogo {
   background-image: none;
   background-color: transparent;
-  height:100%;
+  height:70%;
   margin-top:0px;
 
 }
 .siteimage {
-  height:70% ;
+  height:100% ;
 }
 
 
@@ -226,6 +233,7 @@ p { margin-top:0px; }
 
 
 .mblView {
+  position : fixed ;
   background-color : #e9edf6;
 }
 
@@ -244,7 +252,6 @@ font-size: 12px;
 
 .mblHeading {
 
-padding-left: 20px;
 text-align: left;
 }
 
@@ -327,4 +334,8 @@ margin-top:-40px;
 font-size:12px;
 font-wheight:bold;
 
+}
+
+.mblScrollableView {
+	position: relative ;
 }

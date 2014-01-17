@@ -717,21 +717,17 @@ function writebasket(){
 	var row = Parent.insertRow(rowCount);	
 	row.style.backgroundColor = "#E9EDF6";
 
-
 	var cell0 = row.insertCell(0);
-	cell3.innerHTML =  gettext("Less") ;
-
+	cell0.innerHTML =  gettext("Less") ;
 
 	var cell1 = row.insertCell(1);
 	cell1.innerHTML = gettext('Description') ;
 
-
 	var cell2 = row.insertCell(2);
 	cell2.innerHTML = gettext('qty') ;
 
-
-	var cell4 = row.insertCell(3);
-	cell4.innerHTML = gettext("More") ;
+	var cell3 = row.insertCell(3);
+	cell3.innerHTML = gettext("More") ;
 
 
 	j = 0 ;
@@ -748,7 +744,7 @@ function writebasket(){
 			var cell0 = row.insertCell(0);
 			var element2 = dojo.create("a");
 			element2.href = "javascript:removeproduct(" + i.toString() + ");";
-			element2.innerHTML = '<img src="file://android_asset/www/media/img/minusb.png" />';
+			element2.innerHTML = '<img src="media/img/minusb.png" />';
 			cell0.appendChild(element2);
 
 
@@ -763,7 +759,7 @@ function writebasket(){
 			var cell4 = row.insertCell(3);
 			var element2 = dojo.create("a");
 			element2.href = "javascript:addproduct2(" + i.toString() + ");";
-			element2.innerHTML = '<img src="file://android_asset/www/media/img/plusb.png" />';
+			element2.innerHTML = '<img src="media/img/plusb.png" />';
 			cell4.appendChild(element2);
 
 
@@ -806,7 +802,6 @@ function writesummary(){
 		var cell2 = row.insertCell(2);
 		cell2.innerHTML = gettext('qty') ;
 
-       alert("1");
 
 		j = 0 ;
 
@@ -815,7 +810,6 @@ function writesummary(){
 
 			if ((Basket[i].qty !==0)) {
 				j += 1 ;
-				  alert(j);
 				var rowCount = Parent.rows.length;
 				var row = Parent.insertRow(rowCount);
 				if (isEven(j)) {row.style.backgroundColor="#E9EDF6";}
@@ -844,6 +838,9 @@ function writesummary(){
 
 require(["dojo/domReady!"], function() {
 	
+	
+	locate(completeaddress);  
+	
 
 	SessionUser = new User() ;
 	
@@ -857,11 +854,7 @@ require(["dojo/domReady!"], function() {
 	})
 	
 	
-	
 
-	
-
-	locate(completeaddress);  
 
 	
 	if (SessionUser.authenticated) {

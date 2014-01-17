@@ -204,7 +204,8 @@ if (navigator.geolocation)
 
         		  result.x = lat ;
         		  result.y = longi ;
-
+        		  
+        		  alert(lat); alert(longi);
         		  callback(result) ;
 
         	  }, function(error) {callback(result) ; }) ; }) ; }
